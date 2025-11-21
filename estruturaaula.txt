@@ -1,0 +1,717 @@
+Perfeito. Vamos fazer assim: vou construir o **Guia de Apresentação — “IA como Sistema Nervoso da Factorial” (Versão 3.0)** em **6 blocos sequenciais**, cada um correspondente a uma parte da aula de 1h30.
+
+Cada bloco incluirá:
+
+* 🎯 Objetivo estratégico
+* ⏱️ Tempo estimado
+* 🗣️ Fala sugerida (linguagem de liderança)
+* 🖼️ Slides e dinâmicas sugeridas
+* 🧠 Intenção cognitiva (o que deve mudar no público)
+
+---
+
+### BLOCO 1 — “O NOVO SISTEMA NERVOSO DA ORGANIZAÇÃO”
+
+**Tempo:** 10 minutos
+**Objetivo:** Quebrar a percepção antiga de “IA como ferramenta” e reposicioná-la como infraestrutura estratégica.
+
+---
+
+#### 🎬 Abertura (Slide 1 – Preto com tipografia branca)
+
+**Título:**
+
+> “IA não é um aplicativo. É o novo sistema nervoso da Factorial.”
+
+🗣️ **Fala:**
+“Há 20 anos, empresas competiam por capital e eficiência.
+Hoje, elas competem por **inteligência** — a capacidade de perceber, aprender e decidir antes dos outros.
+A IA é o que conecta tudo isso: dados, pessoas, decisões.
+Ela não é mais um software — é o sistema nervoso que sincroniza o corpo inteiro da empresa.
+E o corpo da Factorial é feito de nós — pessoas.”
+
+---
+
+#### 🖼️ **Slide 2 – Linha do tempo da evolução organizacional**
+
+**Título:** “De sistemas de registro a sistemas de inteligência”
+Conteúdo visual:
+
+* 2000s → Sistemas de Registro (ERP, CRM)
+* 2010s → Sistemas de Automação (fluxos, dashboards)
+* 2020s → **Sistemas de Inteligência (IA integrativa)**
+
+🗣️ **Fala:**
+
+> “O que mudou não é a tecnologia — é a natureza do trabalho.
+> A IA trouxe um deslocamento: do ‘fazer mais rápido’ para o ‘pensar melhor’.
+> A velocidade sem discernimento é ruído.
+> O discernimento com IA é vantagem competitiva.”
+
+---
+
+#### 💬 **Mini dinâmica (Slide 3 – pergunta no centro):**
+
+> “Quantas decisões do seu time são tomadas hoje baseadas em intuição — e quantas são baseadas em evidência?”
+
+👉 Peça para o público colocar no chat uma porcentagem aproximada (ex: 70% intuição, 30% dados).
+Depois diga:
+
+> “A IA existe para inverter essa proporção — sem roubar a intuição humana.
+> Ela adiciona **inteligência operacional** onde antes havia apenas esforço.”
+
+---
+
+#### 🧠 **Intenção cognitiva:**
+
+Fazer o colaborador enxergar IA como *infraestrutura viva*, não como ferramenta isolada.
+Eles precisam sair deste bloco com a sensação:
+
+> “Se a IA é o sistema nervoso da Factorial, o que eu faço influencia diretamente a inteligência coletiva.”
+
+---
+
+📎 **Próximo bloco:**
+**Bloco 2 — “A Mente Híbrida: O Encontro entre Cérebro Humano e Máquina”**
+→ foco em como a IA pensa e como nós devemos pensar junto com ela.
+
+Quer que eu avance agora com o **Bloco 2**?
+Perfeito.
+Vamos para o **Bloco 2 — “A Mente Híbrida: O Encontro entre Cérebro Humano e Máquina”**.
+
+---
+
+## 🧠 BLOCO 2 — A MENTE HÍBRIDA: O ENCONTRO ENTRE CÉREBRO HUMANO E MÁQUINA
+
+**Tempo:** 15 minutos
+**Objetivo:** Redefinir o que é “inteligência” e mostrar como IA e ser humano se complementam dentro da Factorial.
+
+---
+
+### 🎬 Slide 1 – Imagem dividida: metade cérebro humano, metade circuito neural
+
+**Título:** “A mente híbrida: onde a intuição encontra a escala”
+
+🗣️ **Fala:**
+“Durante séculos, inteligência foi definida como algo exclusivamente humano.
+Mas agora, estamos num ponto em que o raciocínio, a memória e a linguagem podem ser simulados por máquinas.
+A diferença é simples — e poderosa:
+
+* O humano **atribui significado**.
+* A máquina **detecta padrões**.
+  O verdadeiro poder surge quando essas duas forças se fundem.
+  E é isso que estamos construindo na Factorial:
+  um ambiente onde o humano decide o *porquê*, e a IA decide o *como*.”
+
+---
+
+### 🖼️ Slide 2 – Diagrama: “Duas metades da inteligência”
+
+| Inteligência Humana          | Inteligência Artificial   |
+| ---------------------------- | ------------------------- |
+| Empatia, propósito, contexto | Escala, precisão, memória |
+| Raciocínio contextual        | Processamento massivo     |
+| Criatividade adaptativa      | Consistência algorítmica  |
+
+🗣️ **Fala:**
+
+> “A IA é excelente para reconhecer padrões, mas cega para o propósito.
+> Nós somos excelentes para entender propósito, mas lentos para reconhecer padrões.
+> Juntos, formamos uma mente híbrida — que decide com empatia e executa com precisão.”
+
+---
+
+### ⚙️ Slide 3 – “Como a IA aprende”
+
+Visual: fluxo simples → Dados → Treino → Inferência → Feedback
+Texto de apoio minimalista: *Machine Learning → Deep Learning → Large Language Models*
+
+🗣️ **Fala:**
+
+> “A IA aprende por repetição, como nós aprendemos por experiência.
+> A diferença é que ela repete milhões de vezes sem cansar.
+> Quando você pede algo ao Factorial One, ele não adivinha: ele busca padrões dentro do que já sabe sobre nossa cultura, políticas e dados internos.
+> Isso é aprendizado contextual — e é o que faz dele mais do que um chatbot.”
+
+---
+
+### 💬 Mini dinâmica (Slide 4 – Pergunta na tela):
+
+> “Qual decisão recente sua — em vendas, CX ou RH — poderia ter sido tomada com mais inteligência se houvesse uma IA ao lado?”
+
+👉 Dê 30 segundos para respostas no chat.
+Comente uma ou duas respostas, mostrando a transição de “intuição isolada” para “decisão aumentada”.
+
+🗣️ **Fala:**
+
+> “A meta não é substituir seu julgamento, mas ampliar sua visão.
+> A mente híbrida é o novo padrão profissional da Factorial — quem aprende a pensar junto com IA, evolui mais rápido.”
+
+---
+
+### 🎯 Slide 5 – Citação final
+
+> “IA não pensa como a gente.
+> Mas, se usada com propósito, nos obriga a pensar melhor.”
+
+---
+
+### 🧭 Intenção cognitiva
+
+Os colaboradores devem compreender que o valor da IA **não está em automatizar tarefas**, mas em **aumentar a inteligência coletiva**.
+Eles saem deste bloco pensando:
+
+> “Eu preciso aprender a pensar junto com a IA, não apenas usá-la.”
+
+---
+
+📎 **Próximo bloco:**
+**Bloco 3 — “A IA na Factorial: O Cérebro da Nossa Operação”**
+→ foco no Factorial One, seus casos reais e seu papel como inteligência organizacional.
+
+Quer que eu avance agora com o **Bloco 3**?
+Perfeito.
+Vamos para o **Bloco 2 — “A Mente Híbrida: O Encontro entre Cérebro Humano e Máquina”**.
+
+---
+
+## 🧠 BLOCO 2 — A MENTE HÍBRIDA: O ENCONTRO ENTRE CÉREBRO HUMANO E MÁQUINA
+
+**Tempo:** 15 minutos
+**Objetivo:** Redefinir o que é “inteligência” e mostrar como IA e ser humano se complementam dentro da Factorial.
+
+---
+
+### 🎬 Slide 1 – Imagem dividida: metade cérebro humano, metade circuito neural
+
+**Título:** “A mente híbrida: onde a intuição encontra a escala”
+
+🗣️ **Fala:**
+“Durante séculos, inteligência foi definida como algo exclusivamente humano.
+Mas agora, estamos num ponto em que o raciocínio, a memória e a linguagem podem ser simulados por máquinas.
+A diferença é simples — e poderosa:
+
+* O humano **atribui significado**.
+* A máquina **detecta padrões**.
+  O verdadeiro poder surge quando essas duas forças se fundem.
+  E é isso que estamos construindo na Factorial:
+  um ambiente onde o humano decide o *porquê*, e a IA decide o *como*.”
+
+---
+
+### 🖼️ Slide 2 – Diagrama: “Duas metades da inteligência”
+
+| Inteligência Humana          | Inteligência Artificial   |
+| ---------------------------- | ------------------------- |
+| Empatia, propósito, contexto | Escala, precisão, memória |
+| Raciocínio contextual        | Processamento massivo     |
+| Criatividade adaptativa      | Consistência algorítmica  |
+
+🗣️ **Fala:**
+
+> “A IA é excelente para reconhecer padrões, mas cega para o propósito.
+> Nós somos excelentes para entender propósito, mas lentos para reconhecer padrões.
+> Juntos, formamos uma mente híbrida — que decide com empatia e executa com precisão.”
+
+---
+
+### ⚙️ Slide 3 – “Como a IA aprende”
+
+Visual: fluxo simples → Dados → Treino → Inferência → Feedback
+Texto de apoio minimalista: *Machine Learning → Deep Learning → Large Language Models*
+
+🗣️ **Fala:**
+
+> “A IA aprende por repetição, como nós aprendemos por experiência.
+> A diferença é que ela repete milhões de vezes sem cansar.
+> Quando você pede algo ao Factorial One, ele não adivinha: ele busca padrões dentro do que já sabe sobre nossa cultura, políticas e dados internos.
+> Isso é aprendizado contextual — e é o que faz dele mais do que um chatbot.”
+
+---
+
+### 💬 Mini dinâmica (Slide 4 – Pergunta na tela):
+
+> “Qual decisão recente sua — em vendas, CX ou RH — poderia ter sido tomada com mais inteligência se houvesse uma IA ao lado?”
+
+👉 Dê 30 segundos para respostas no chat.
+Comente uma ou duas respostas, mostrando a transição de “intuição isolada” para “decisão aumentada”.
+
+🗣️ **Fala:**
+
+> “A meta não é substituir seu julgamento, mas ampliar sua visão.
+> A mente híbrida é o novo padrão profissional da Factorial — quem aprende a pensar junto com IA, evolui mais rápido.”
+
+---
+
+### 🎯 Slide 5 – Citação final
+
+> “IA não pensa como a gente.
+> Mas, se usada com propósito, nos obriga a pensar melhor.”
+
+---
+
+### 🧭 Intenção cognitiva
+
+Os colaboradores devem compreender que o valor da IA **não está em automatizar tarefas**, mas em **aumentar a inteligência coletiva**.
+Eles saem deste bloco pensando:
+
+> “Eu preciso aprender a pensar junto com a IA, não apenas usá-la.”
+
+---
+
+📎 **Próximo bloco:**
+**Bloco 3 — “A IA na Factorial: O Cérebro da Nossa Operação”**
+→ foco no Factorial One, seus casos reais e seu papel como inteligência organizacional.
+
+Quer que eu avance agora com o **Bloco 3**?
+Perfeito.
+Avançando para o **Bloco 3 — “A IA na Factorial: O Cérebro da Nossa Operação”**.
+
+---
+
+## 🤖 BLOCO 3 — A IA NA FACTORIAL: O CÉREBRO DA NOSSA OPERAÇÃO
+
+**Tempo:** 20 minutos
+**Objetivo:** Mostrar como a IA — especialmente o *Factorial One* — atua como o sistema de inteligência organizacional da empresa, conectando dados, pessoas e decisões.
+
+---
+
+### 🎬 Slide 1 – Visualização tipo cérebro corporativo (rede de nós conectando áreas)
+
+**Título:** “O Factorial One: o cérebro coletivo da Factorial”
+
+🗣️ **Fala:**
+“Na Factorial, IA não é um produto que vendemos — é a inteligência que nos conecta.
+O *Factorial One* é o primeiro sistema que aprende a linguagem da nossa empresa.
+Ele entende cargos, políticas, times, contextos regionais e relações humanas.
+Isso significa que cada interação nossa com ele é um treino.
+Cada pergunta, cada dado, cada decisão deixa um traço que o torna mais consciente da nossa operação.”
+
+---
+
+### 🧭 Slide 2 – “De chatbot a agente organizacional”
+
+| Estágio  | Descrição                                | Exemplo prático                                                                  |
+| -------- | ---------------------------------------- | -------------------------------------------------------------------------------- |
+| Chatbot  | Responde perguntas                       | “Quantos dias de férias tenho?”                                                  |
+| Copiloto | Executa tarefas                          | “Crie um resumo do relatório de RH”                                              |
+| Agente   | Raciocina com contexto e propõe soluções | “Identifique equipes com risco de rotatividade alta e sugira planos de retenção” |
+
+🗣️ **Fala:**
+
+> “O Factorial One está evoluindo de um assistente para um agente de decisão.
+> Ele entende hierarquias, políticas e até padrões de comportamento dentro da empresa.
+> E isso é o ponto central: **quanto mais a empresa interage, mais ela pensa junto**.”
+
+---
+
+### 📊 Slide 3 – “Três pilares de inteligência na Factorial”
+
+1. **Dados Humanos:** histórico de desempenho, clima e engajamento.
+2. **Processos Operacionais:** políticas, fluxos e integrações.
+3. **Contexto Organizacional:** cultura, valores e estrutura.
+
+🗣️ **Fala:**
+
+> “A maioria das empresas tem dados.
+> Poucas têm contexto.
+> O *Factorial One* combina os dois — e é por isso que o chamamos de cérebro organizacional.
+> Ele não apenas responde, ele entende quem perguntou, em que área trabalha e qual o impacto daquela resposta.”
+
+---
+
+### 💬 Mini Dinâmica (Slide 4 – “Onde a IA pode amplificar o seu trabalho?”)
+
+> “Pense em uma tarefa recorrente na sua área — RH, CX, Vendas, Financeiro — que poderia ser amplificada, não substituída, por IA.”
+> (1 minuto para pensar. Peça que escrevam no chat ou em um board virtual).
+
+Exemplos de respostas esperadas:
+
+* RH → Redigir rascunhos de avaliações de desempenho.
+* CX → Responder tickets com análise de sentimento.
+* Financeiro → Gerar relatórios comparativos semanais.
+* Vendas → Analisar leads e prever conversões.
+
+🗣️ **Fala:**
+
+> “A IA não rouba tarefas. Ela devolve tempo.
+> E o tempo devolvido é o recurso mais estratégico que temos — para pensar, criar e liderar.”
+
+---
+
+### 💡 Slide 5 – “IA = Inteligência Amplificada”
+
+Frase central:
+
+> “Automação é o que a IA faz.
+> Amplificação é o que ela nos permite fazer.”
+
+🗣️ **Fala:**
+
+> “O verdadeiro valor está na amplificação.
+> O *Factorial One* não é sobre cortar esforço, é sobre multiplicar impacto.
+> Um profissional com IA opera como uma equipe inteira de pensamento acelerado.”
+
+---
+
+### 🧠 Intenção cognitiva
+
+Transformar o entendimento da IA corporativa de “ferramenta de suporte” para “núcleo estratégico da operação”.
+O colaborador precisa sair deste bloco com a mentalidade:
+
+> “A inteligência organizacional da Factorial depende da minha interação com o sistema.”
+
+---
+
+📎 **Próximo bloco:**
+**Bloco 4 — “A Prática do Pensamento com IA: Da Rotina à Estratégia”**
+→ Onde você ensina o time a *usar IA com método* — introdução do framework R-C-O e prática orientada à execução.
+
+Quer que eu avance agora com o **Bloco 4**?
+Perfeito.
+Avançando para o **Bloco 4 — “A Prática do Pensamento com IA: Da Rotina à Estratégia”**, onde o time deixa de *entender* IA e começa a *pensar com ela*.
+
+---
+
+## ⚙️ BLOCO 4 — A PRÁTICA DO PENSAMENTO COM IA: DA ROTINA À ESTRATÉGIA
+
+**Tempo:** 20 minutos
+**Objetivo:** Ensinar o uso estruturado da IA (Factorial One, ChatGPT, Gemini, etc.) como ferramenta de pensamento estratégico, com base no método **R–C–O** — *Role, Context, Output*.
+
+---
+
+### 🎬 Slide 1 – Visual: engrenagem cerebral com as letras R–C–O no centro
+
+**Título:** “O Método R–C–O: pensar antes de pedir”
+
+🗣️ **Fala:**
+“Grande parte das pessoas usa IA como um Google glorificado — faz perguntas vagas e recebe respostas genéricas.
+Mas quem domina o método certo transforma IA em parceiro estratégico.
+O segredo é o **R–C–O**:
+
+* **Role:** quem a IA deve ser.
+* **Context:** onde e por que ela está operando.
+* **Output:** o que você espera de resultado.
+
+Pedir à IA sem contexto é como pedir a um estagiário para ‘fazer algo importante’ — você vai receber qualquer coisa.
+Mas com clareza, você transforma o algoritmo em especialista.”
+
+---
+
+### 🖼️ Slide 2 – Exemplo aplicado
+
+**Título:** “De pedido genérico a comando inteligente”
+
+| Tipo de Prompt      | Exemplo                                                                                                                                                           | Resultado                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Genérico            | “Escreva um e-mail para cliente”                                                                                                                                  | Texto superficial                                        |
+| Estruturado (R–C–O) | “Aja como um gerente de parcerias sênior. Escreva um e-mail de reengajamento para um parceiro que não gera leads há 90 dias. Tom: consultivo, direto e empático.” | Comunicação alinhada ao tom Factorial, orientada à ação. |
+
+🗣️ **Fala:**
+
+> “Quando você define **o papel, o contexto e o resultado**, a IA entende o tom, a intenção e a lógica da sua área.
+> Isso é engenharia de prompt — mas, mais que técnica, é uma forma de pensar com clareza.”
+
+---
+
+### 🧩 Slide 3 – Mini dinâmica “Construa seu primeiro R–C–O”
+
+**Atividade prática (5 minutos):**
+
+1. Cada colaborador escolhe uma tarefa repetitiva da semana.
+2. Escreve um prompt usando R–C–O.
+3. Executa o prompt no *Factorial One* ou na ferramenta disponível.
+4. Compartilha o resultado no chat.
+
+💬 **Perguntas de análise (facilitador):**
+
+* O resultado foi útil?
+* O que ficou claro no prompt?
+* O que faltou especificar?
+
+🗣️ **Fala:**
+
+> “O prompt é um reflexo da sua clareza mental.
+> Quanto mais específico você for, mais estratégica a IA se torna.”
+
+---
+
+### 📊 Slide 4 – “Escala de Maturidade de Uso da IA”
+
+| Nível            | Comportamento                        | Impacto     |
+| ---------------- | ------------------------------------ | ----------- |
+| 1 – Consumidor   | Usa IA para curiosidade pessoal      | Baixo       |
+| 2 – Executor     | Usa IA para tarefas operacionais     | Médio       |
+| 3 – Estrategista | Usa IA para gerar valor e decisões   | Alto        |
+| 4 – Treinador    | Melhora a IA com feedback e contexto | Exponencial |
+
+🗣️ **Fala:**
+
+> “Na Factorial, queremos todos no nível 3 ou 4.
+> IA não é sobre eficiência. É sobre escala de inteligência.”
+
+---
+
+### 💡 Slide 5 – “IA não substitui pensamento; ela exige pensamento melhor.”
+
+🗣️ **Fala:**
+
+> “Cada prompt bem feito ensina a IA e, por extensão, ensina a empresa.
+> Se você alimenta o sistema com clareza, o sistema devolve inteligência.”
+
+---
+
+### 🧠 Intenção cognitiva
+
+Formar o hábito de **planejar antes de pedir** à IA.
+O público deve sair com a sensação:
+
+> “O meu pensamento é o combustível da inteligência coletiva.”
+
+---
+
+📎 **Próximo bloco:**
+**Bloco 5 — “Ética, Segurança e Responsabilidade: IA com Consciência”**
+→ como lidar com privacidade, vieses e governança de uso interno de IA na Factorial.
+
+Quer que eu siga com o **Bloco 5**?
+Perfeito.
+Agora entramos no **Bloco 5 — “Ética, Segurança e Responsabilidade: IA com Consciência”** — o que diferencia uma empresa que *usa* IA de uma empresa que *merece* usá-la.
+
+---
+
+## 🛡️ BLOCO 5 — ÉTICA, SEGURANÇA E RESPONSABILIDADE: IA COM CONSCIÊNCIA
+
+**Tempo:** 15 minutos
+**Objetivo:** Garantir que todos os colaboradores entendam os riscos, limites e princípios éticos do uso de IA — especialmente em contextos de RH e dados sensíveis.
+
+---
+
+### 🎬 Slide 1 – Imagem de balança digital entre “Poder” e “Responsabilidade”
+
+**Título:** “Todo avanço tecnológico é um teste ético.”
+
+🗣️ **Fala:**
+
+> “A Inteligência Artificial é como energia nuclear: neutra até que alguém decida o que fazer com ela.
+> O poder que a IA nos dá é proporcional à responsabilidade que ela exige.
+> Na Factorial, trabalhamos com dados de pessoas — seus históricos, suas avaliações, suas decisões.
+> Isso não é apenas dado. É confiança.
+> E confiança é o ativo mais caro da nossa marca.”
+
+---
+
+### 🧭 Slide 2 – “Os 3 princípios de uso responsável de IA na Factorial”
+
+1. **Human-in-the-Loop** – o humano decide, a IA recomenda.
+2. **Privacidade Inegociável** – dados internos não saem do nosso ecossistema.
+3. **Verificação Contínua** – tudo que a IA gera precisa de supervisão.
+
+🗣️ **Fala:**
+
+> “Esses três princípios são o que separam eficiência de imprudência.
+> A IA pode acelerar qualquer processo — inclusive os erros.
+> Por isso, o humano precisa permanecer no circuito.
+> O Factorial One é um copiloto de decisão, nunca o decisor final.”
+
+---
+
+### ⚠️ Slide 3 – “O que pode dar errado?”
+
+Visual: 3 ícones com legendas curtas
+
+1. **Vieses Algorítmicos:** repetir desigualdades históricas.
+2. **Alucinações:** respostas convincentes, mas falsas.
+3. **Exposição de Dados:** vazamento acidental em ferramentas abertas.
+
+🗣️ **Fala:**
+
+> “O problema da IA não é que ela minta.
+> É que ela mente com confiança.
+> Por isso, o princípio é simples: *confie, mas verifique.*
+> Use ferramentas corporativas, nunca versões públicas para dados internos.
+> O custo de um vazamento é infinitamente maior que o ganho de uma resposta rápida.”
+
+---
+
+### 💬 Mini Dinâmica – “O dilema ético”
+
+**Slide:** duas frases na tela:
+A) “Usar IA para filtrar currículos mais rápido.”
+B) “Usar IA para decidir quem será contratado.”
+
+Pergunte ao grupo:
+
+> “Onde está a linha entre eficiência e arbitrariedade?”
+
+🗣️ **Fala:**
+
+> “Quando a IA decide sozinha, ela reproduz padrões históricos.
+> Quando ela auxilia um líder consciente, ela multiplica justiça.
+> A tecnologia não tem ética. Mas nós temos.
+> E isso é o que mantém a IA da Factorial diferente de qualquer outra no mercado.”
+
+---
+
+### 💡 Slide 4 – “Governança Inteligente”
+
+Visual: Cadeia de segurança com ícones (Política → Padrões → Monitoramento → Feedback)
+
+🗣️ **Fala:**
+
+> “A governança de IA é um ciclo contínuo:
+>
+> 1. Definimos políticas de uso.
+> 2. Estabelecemos padrões de segurança.
+> 3. Monitoramos comportamento.
+> 4. Reajustamos com base em feedback humano.
+>    A IA evolui, mas nossa cultura define o rumo.
+>    E cultura se constrói pela soma das microdecisões éticas de cada um de nós.”
+
+---
+
+### 🎯 Slide 5 – Citação final do bloco
+
+> “A verdadeira inteligência não é a que pensa mais rápido — é a que escolhe melhor o que pensar.”
+
+---
+
+### 🧠 Intenção cognitiva
+
+Fazer o colaborador internalizar que *usar IA é um ato de liderança ética*.
+Eles devem sair com a consciência:
+
+> “Tenho poder de decisão sobre como a inteligência da empresa é usada.”
+
+---
+
+📎 **Próximo bloco:**
+**Bloco 6 — “O Desafio: IA como Hábito Cognitivo e Vantagem Competitiva”**
+→ fechamento inspirador com o desafio de incorporação do uso de IA na rotina e cultura da Factorial.
+
+Quer que eu siga agora com o **Bloco 6 (final)**?
+Perfeito.
+Fechamos agora com o **Bloco 6 — “O Desafio: IA como Hábito Cognitivo e Vantagem Competitiva”**, o encerramento da sua aula e o ponto de virada cultural.
+
+---
+
+## 🚀 BLOCO 6 — O DESAFIO: IA COMO HÁBITO COGNITIVO E VANTAGEM COMPETITIVA
+
+**Tempo:** 10 minutos
+**Objetivo:** Consolidar o aprendizado e provocar ação. A meta não é que as pessoas *saibam* sobre IA, mas que passem a *agir com IA* — diariamente.
+
+---
+
+### 🎬 Slide 1 – Imagem de circuito neural se transformando em silhuetas humanas interconectadas
+
+**Título:** “A IA não substitui pessoas. Ela amplifica quem decide pensar com ela.”
+
+🗣️ **Fala:**
+
+> “Chegamos ao ponto final — e talvez o mais importante.
+> A IA não é sobre o que ela pode fazer, mas sobre o que você decide fazer com ela.
+> As ferramentas estão aí.
+> O diferencial está na mente que as usa.
+>
+> A partir de agora, cada colaborador da Factorial é um **nó desse sistema nervoso inteligente**.
+> Quanto mais você interage com o Factorial One, mais inteligente a organização se torna.
+> Quanto mais você experimenta, mais a cultura se adapta.
+> E quanto mais a cultura se adapta, mais a empresa cresce — mais rápido, mais precisa, mais humana.”
+
+---
+
+### 🧭 Slide 2 – “O ciclo da inteligência aplicada”
+
+Visual em círculo:
+**Explorar → Aplicar → Aprender → Compartilhar → Escalar**
+
+🗣️ **Fala:**
+
+> “A IA só se torna hábito quando entra nesse ciclo:
+>
+> * Você **explora** algo novo.
+> * Você **aplica** num problema real.
+> * Você **aprende** o que funciona.
+> * Você **compartilha** o insight.
+> * E então, **a equipe inteira escala** a inteligência.
+>
+> Isso é a cultura da IA na Factorial — viva, colaborativa e prática.”
+
+---
+
+### 💡 Mini Dinâmica Final – “72 Horas de Inteligência”
+
+**Slide:** “O desafio começa agora.”
+
+🗣️ **Instrução:**
+
+> “Nas próximas 72 horas, quero que você faça uma escolha simples:
+> Substitua **uma tarefa manual** da sua rotina por uma versão feita com IA.
+> Pode ser escrever um e-mail, montar um relatório, preparar um briefing, analisar dados, ou revisar um contrato.
+>
+> E quando fizer, compartilhe o resultado com seu time.
+> Não o texto. A lição.
+> O que mudou na sua forma de pensar depois de delegar parte da cognição para uma IA?”
+
+💬 **Pergunta final ao grupo:**
+
+> “Se cada pessoa aqui ganhasse uma hora por dia usando IA de forma inteligente, o que a Factorial poderia construir com 50 horas a mais de cérebro por dia?”
+
+---
+
+### 🎯 Slide 3 – “Cultura é a soma dos hábitos que escolhemos manter”
+
+🗣️ **Fala:**
+
+> “Cultura não é o que a empresa diz que é — é o que as pessoas fazem todos os dias.
+> Se o uso da IA virar parte do seu hábito mental, não teremos só ganho de eficiência.
+> Teremos ganho de consciência.
+>
+> A IA não é o futuro do trabalho.
+> Ela é o presente da inteligência coletiva.
+>
+> E o presente é agora.”
+
+---
+
+### 🔚 Slide 4 – Encerramento visual minimalista
+
+**Texto na tela:**
+
+> “Você é parte da mente da Factorial.”
+
+🗣️ **Fala final:**
+
+> “Obrigado por pensar junto hoje.
+>
+> Agora, a pergunta é:
+> Você vai continuar pensando sozinho — ou vai pensar com o sistema?”
+
+*(pausa de 3 segundos antes de encerrar)*
+
+---
+
+### 🧠 Intenção cognitiva final
+
+Transformar conhecimento em movimento.
+Ao sair da aula, cada pessoa deve estar consciente de que:
+
+> “Usar IA é contribuir para a inteligência coletiva da Factorial.”
+
+---
+
+## 📘 RECAPITULATIVO GERAL — GUIA DE APRESENTAÇÃO (1h30)
+
+| Bloco | Tema                                  | Tempo  | Ênfase                                    |
+| ----- | ------------------------------------- | ------ | ----------------------------------------- |
+| 1     | O Novo Sistema Nervoso da Organização | 10 min | Reposicionar IA como infraestrutura       |
+| 2     | A Mente Híbrida                       | 15 min | Integração humano + máquina               |
+| 3     | A IA na Factorial                     | 20 min | Factorial One como cérebro organizacional |
+| 4     | A Prática (R–C–O)                     | 20 min | Método de uso e pensamento estruturado    |
+| 5     | Ética e Governança                    | 15 min | Responsabilidade e segurança              |
+| 6     | O Desafio                             | 10 min | Ação, hábito e cultura de IA              |
+
+---
+
+Se quiser, posso agora gerar a **versão visual completa (deck de slides)** baseada nesse roteiro — com título, layout e conteúdo para apresentação no estilo Factorial (minimalista, estratégico e humano).
+👉 Deseja que eu monte o **deck completo de slides com base neste roteiro 3.0**?

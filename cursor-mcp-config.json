@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "pdf-extraction": {
+      "command": "python",
+      "args": [
+        "-m",
+        "pdf_extraction"
+      ],
+      "cwd": "C:\\Users\\victo\\OneDrive\\Área de Trabalho\\IA - Escola de Produto\\mcp-pdf-extraction-server"
+    }
+  }
+}
+
