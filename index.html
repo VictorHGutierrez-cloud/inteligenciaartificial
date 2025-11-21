@@ -962,92 +962,179 @@
         </div>
     </section>
 
-    <!-- Casos Reais na Factorial -->
-    <section class="px-8 py-24 bg-gray-50 border-t border-gray-100">
+    <!-- IA em Ação: Casos Reais na Factorial -->
+    <section class="px-8 py-24 bg-gradient-to-br from-gray-50 to-blue-50 border-t border-gray-100">
         <div class="container mx-auto">
-            <div class="mb-16 grid place-items-center text-center">
-                <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">Casos Reais na Factorial</h2>
-                <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-500 lg:w-6/12">
-                    Exemplos práticos de como a IA amplifica resultados em áreas críticas
+            <div class="mb-16 text-center">
+                <span class="text-factorial-500 font-bold tracking-widest uppercase text-sm mb-2 block">Casos Reais</span>
+                <h2 class="block antialiased tracking-normal font-sans text-4xl font-extrabold leading-[1.3] text-blue-gray-900 mb-4">
+                    IA em Ação: Casos possíveis na própria Factorial
+                </h2>
+                <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-600 max-w-3xl mx-auto">
+                    Veja como times estão usando IA para amplificar resultados. Cada caso inclui o prompt real usado (R-C-O) para você replicar.
                 </p>
             </div>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">👥</span>
-                    </div>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">RH: Avaliações</h4>
-                    <p class="text-sm text-gray-600 mb-4">Rascunhos com base em metas e feedbacks. Economia: 3h por gestor/ciclo.</p>
-                    <span class="inline-block px-3 py-1 rounded-lg bg-factorial-100 text-factorial-700 text-xs font-bold">+28% qualidade</span>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">💬</span>
-                    </div>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">CX: Respostas</h4>
-                    <p class="text-sm text-gray-600 mb-4">Sugestões com base em políticas e tom de voz. Redução de tempo médio.</p>
-                    <span class="inline-block px-3 py-1 rounded-lg bg-blue-100 text-blue-700 text-xs font-bold">-32% TMR</span>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                    <div class="w-12 h-12 bg-factorial-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">📈</span>
-                    </div>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Vendas: Briefing</h4>
-                    <p class="text-sm text-gray-600 mb-4">Dossiê automático do lead com histórico, objeções e próximos passos.</p>
-                    <span class="inline-block px-3 py-1 rounded-lg bg-purple-100 text-purple-700 text-xs font-bold">+19% conversão</span>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                    <div class="w-12 h-12 bg-factorial-orange-100 rounded-lg flex items-center justify-center mb-4">
-                        <span class="text-2xl">💰</span>
-                    </div>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Financeiro: Relatórios</h4>
-                    <p class="text-sm text-gray-600 mb-4">Geração de variações semanais com insights e anomalias destacadas.</p>
-                    <span class="inline-block px-3 py-1 rounded-lg bg-factorial-orange-100 text-factorial-orange-700 text-xs font-bold">-40% esforço</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Playbooks -->
-    <section class="container mx-auto px-8 py-24">
-        <div class="mb-16 grid place-items-center text-center">
-            <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">Playbooks por Área</h2>
-            <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-500 lg:w-6/12">
-                Checklists operacionais para usar IA sem fricção no dia a dia
-            </p>
-        </div>
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-4">
-            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                <h4 class="text-lg font-semibold text-blue-gray-900 mb-4">RH</h4>
-                <ul class="text-sm text-gray-600 space-y-2">
-                    <li>• Rascunho de avaliação (R–C–O)</li>
-                    <li>• Feedback 360° com tom Factorial</li>
-                    <li>• Plano de PDI com metas SMART</li>
-                </ul>
+            <!-- Caso 1: RH -->
+            <div class="mb-12 bg-white rounded-2xl p-8 shadow-xl border-2 border-blue-200 card-hover">
+                <div class="flex items-start gap-6 mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-3xl">👥</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">RH: Avaliações de Desempenho</h3>
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <span class="inline-block px-3 py-1 rounded-lg bg-factorial-100 text-factorial-700 text-sm font-bold">+28% qualidade</span>
+                            <span class="text-sm text-gray-600">Economia de 3h por gestor/ciclo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-400">
+                        <p class="text-xs font-bold text-red-600 uppercase mb-2">❌ Antes</p>
+                        <p class="text-sm text-gray-700">Gestores gastavam 3-4 horas escrevendo avaliações do zero, sem estrutura clara. Resultado: inconsistência e baixa qualidade.</p>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-400">
+                        <p class="text-xs font-bold text-green-600 uppercase mb-2">✅ Depois</p>
+                        <p class="text-sm text-gray-700">IA gera rascunho estruturado em 5 minutos. Gestor revisa e personaliza em 30min. Qualidade e consistência aumentaram.</p>
+                    </div>
+                </div>
+
+                <div class="bg-factorial-50 rounded-xl p-6 border-2 border-factorial-200">
+                    <p class="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <span>💡</span> Prompt Real Usado (R-C-O):
+                    </p>
+                    <div class="bg-white rounded-lg p-4 font-mono text-xs space-y-2 border border-factorial-200">
+                        <div><strong class="text-factorial-600">Role:</strong> Gerente de RH Sênior da Factorial</div>
+                        <div><strong class="text-factorial-600">Context:</strong> Avaliação semestral de [Nome], desenvolvedor, 6 meses na empresa. Metas: entregar 3 features, melhorar code review. Feedback: positivo do time.</div>
+                        <div><strong class="text-factorial-600">Output:</strong> Rascunho de avaliação em 3 parágrafos: conquistas, áreas de crescimento, próximos passos. Tom profissional e construtivo.</div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                <h4 class="text-lg font-semibold text-blue-gray-900 mb-4">CX</h4>
-                <ul class="text-sm text-gray-600 space-y-2">
-                    <li>• Respostas com política e empatia</li>
-                    <li>• Sumário de tickets longos</li>
-                    <li>• Análise de sentimento e próximos passos</li>
-                </ul>
+
+            <!-- Caso 2: CX -->
+            <div class="mb-12 bg-white rounded-2xl p-8 shadow-xl border-2 border-purple-200 card-hover">
+                <div class="flex items-start gap-6 mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-3xl">💬</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">CX: Respostas ao Cliente</h3>
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <span class="inline-block px-3 py-1 rounded-lg bg-blue-100 text-blue-700 text-sm font-bold">-32% TMR</span>
+                            <span class="text-sm text-gray-600">Tempo médio de resposta reduzido</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-400">
+                        <p class="text-xs font-bold text-red-600 uppercase mb-2">❌ Antes</p>
+                        <p class="text-sm text-gray-700">Agentes demoravam para encontrar políticas corretas e manter tom consistente. Respostas genéricas ou muito técnicas.</p>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-400">
+                        <p class="text-xs font-bold text-green-600 uppercase mb-2">✅ Depois</p>
+                        <p class="text-sm text-gray-700">IA sugere respostas baseadas em políticas internas e tom de voz Factorial. Agente revisa e personaliza rapidamente.</p>
+                    </div>
+                </div>
+
+                <div class="bg-factorial-50 rounded-xl p-6 border-2 border-factorial-200">
+                    <p class="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <span>💡</span> Prompt Real Usado (R-C-O):
+                    </p>
+                    <div class="bg-white rounded-lg p-4 font-mono text-xs space-y-2 border border-factorial-200">
+                        <div><strong class="text-factorial-600">Role:</strong> Especialista em Atendimento ao Cliente da Factorial</div>
+                        <div><strong class="text-factorial-600">Context:</strong> Cliente pergunta sobre política de cancelamento. Contrato de 12 meses, 6 meses utilizados. Tom empático e consultivo.</div>
+                        <div><strong class="text-factorial-600">Output:</strong> Resposta em 2-3 parágrafos explicando política, opções disponíveis e próximos passos. Incluir link para política oficial.</div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                <h4 class="text-lg font-semibold text-blue-gray-900 mb-4">Vendas</h4>
-                <ul class="text-sm text-gray-600 space-y-2">
-                    <li>• Briefing de conta (ICP, dor, objeções)</li>
-                    <li>• E-mails por estágio do funil</li>
-                    <li>• Call prep com roteiro objetivo</li>
-                </ul>
+
+            <!-- Caso 3: Vendas -->
+            <div class="mb-12 bg-white rounded-2xl p-8 shadow-xl border-2 border-factorial-200 card-hover">
+                <div class="flex items-start gap-6 mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-factorial-100 to-factorial-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-3xl">📈</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Vendas: Briefing de Conta</h3>
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <span class="inline-block px-3 py-1 rounded-lg bg-purple-100 text-purple-700 text-sm font-bold">+19% conversão</span>
+                            <span class="text-sm text-gray-600">Briefings mais completos e estratégicos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-400">
+                        <p class="text-xs font-bold text-red-600 uppercase mb-2">❌ Antes</p>
+                        <p class="text-sm text-gray-700">Vendedores gastavam horas coletando informações espalhadas em diferentes sistemas. Briefings incompletos e desatualizados.</p>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-400">
+                        <p class="text-xs font-bold text-green-600 uppercase mb-2">✅ Depois</p>
+                        <p class="text-sm text-gray-700">IA compila automaticamente histórico, objeções, interações e próximos passos. Briefing completo em minutos, não horas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-factorial-50 rounded-xl p-6 border-2 border-factorial-200">
+                    <p class="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <span>💡</span> Prompt Real Usado (R-C-O):
+                    </p>
+                    <div class="bg-white rounded-lg p-4 font-mono text-xs space-y-2 border border-factorial-200">
+                        <div><strong class="text-factorial-600">Role:</strong> Gerente de Vendas Sênior da Factorial</div>
+                        <div><strong class="text-factorial-600">Context:</strong> Conta [Nome da Empresa], ICP: empresas 50-200 funcionários. Última interação: demo há 2 semanas. Objeção: preço. Próxima reunião: apresentação proposta.</div>
+                        <div><strong class="text-factorial-600">Output:</strong> Briefing estruturado: perfil da conta, histórico de interações, objeções identificadas, estratégia de abordagem e roteiro para próxima reunião.</div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                <h4 class="text-lg font-semibold text-blue-gray-900 mb-4">Financeiro</h4>
-                <ul class="text-sm text-gray-600 space-y-2">
-                    <li>• Relatório comparativo semanal</li>
-                    <li>• Detecção de anomalias</li>
-                    <li>• Explicações "como se eu tivesse 5 anos"</li>
-                </ul>
+
+            <!-- Caso 4: Financeiro -->
+            <div class="mb-12 bg-white rounded-2xl p-8 shadow-xl border-2 border-factorial-orange-200 card-hover">
+                <div class="flex items-start gap-6 mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-factorial-orange-100 to-factorial-orange-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-3xl">💰</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Financeiro: Relatórios e Análises</h3>
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <span class="inline-block px-3 py-1 rounded-lg bg-factorial-orange-100 text-factorial-orange-700 text-sm font-bold">-40% esforço</span>
+                            <span class="text-sm text-gray-600">Tempo de análise reduzido significativamente</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-400">
+                        <p class="text-xs font-bold text-red-600 uppercase mb-2">❌ Antes</p>
+                        <p class="text-sm text-gray-700">Equipe financeira gastava horas compilando dados, identificando variações e explicando insights. Processo manual e propenso a erros.</p>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-400">
+                        <p class="text-xs font-bold text-green-600 uppercase mb-2">✅ Depois</p>
+                        <p class="text-sm text-gray-700">IA gera relatórios semanais com variações destacadas, anomalias identificadas e explicações em linguagem simples. Revisão e validação em minutos.</p>
+                    </div>
+                </div>
+
+                <div class="bg-factorial-50 rounded-xl p-6 border-2 border-factorial-200">
+                    <p class="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <span>💡</span> Prompt Real Usado (R-C-O):
+                    </p>
+                    <div class="bg-white rounded-lg p-4 font-mono text-xs space-y-2 border border-factorial-200">
+                        <div><strong class="text-factorial-600">Role:</strong> Analista Financeiro Sênior da Factorial</div>
+                        <div><strong class="text-factorial-600">Context:</strong> Comparar receita e despesas desta semana vs semana anterior. Dados: receita +15%, marketing +30%, vendas -5%. Identificar anomalias e explicar causas prováveis.</div>
+                        <div><strong class="text-factorial-600">Output:</strong> Relatório em 3 seções: resumo executivo, variações destacadas com alertas, explicações "como se eu tivesse 5 anos" para cada variação significativa.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-factorial-500 via-factorial-green-500 to-factorial-yellow-500 rounded-2xl p-8 text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <p class="text-xl font-semibold mb-2 animate-fade-in">
+                    "Agora é sua vez: escolha um caso acima e replique na sua área nas próximas 72 horas."
+                </p>
+                <p class="text-sm text-white/90 mt-4">
+                    Use o método R-C-O para criar seu próprio prompt. Compartilhe os resultados com seu time.
+                </p>
             </div>
         </div>
     </section>
