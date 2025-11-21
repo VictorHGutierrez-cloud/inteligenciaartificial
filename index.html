@@ -1,283 +1,135 @@
-<!--
-    RESUMO DAS MUDANÇAS TEXTUAIS REALIZADAS:
-    1. Adicionados 3 objetivos de aprendizagem claros e mensuráveis no topo
-    2. Manifesto reescrito com tom mais direto e impacto (máximo 2 frases)
-    3. Para cada um dos 6 blocos: objetivo em uma linha, exemplo prático curto, micro exercício de 3 passos, e frase de transição
-    4. Criado mini case com números hipotéticos plausíveis e cálculo de impacto
-    5. Geradas speaker notes para o apresentador (30-60 segundos por parte)
-    6. Adicionada tarefa pós-aula no rodapé com instruções de entrega e critérios de avaliação
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IA como Sistema Nervoso da Factorial | Masterclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Fira Sans', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        'factorial': {
+                            // Radical Red #FF355E
+                            50: '#fff1f3',
+                            100: '#ffe0e5',
+                            200: '#ffc7d1',
+                            300: '#ff9fb0',
+                            400: '#ff6b85',
+                            500: '#FF355E', // Radical Red - Primary
+                            600: '#e62e52',
+                            700: '#cc2646',
+                            800: '#b31f3a',
+                            900: '#99182e',
+                        },
+                        'factorial-green': {
+                            // Viridian Green #07A2AD
+                            50: '#e6f7f8',
+                            100: '#b3e8eb',
+                            200: '#80d9de',
+                            300: '#4dcad1',
+                            400: '#1abac4',
+                            500: '#07A2AD', // Viridian Green - Primary
+                            600: '#06919a',
+                            700: '#058087',
+                            800: '#046f74',
+                            900: '#035e61',
+                        },
+                        'factorial-yellow': {
+                            // Sunbeam #FFB940
+                            50: '#fff8ed',
+                            100: '#ffeed3',
+                            200: '#ffddb9',
+                            300: '#ffcc9f',
+                            400: '#ffbb85',
+                            500: '#FFB940', // Sunbeam - Primary
+                            600: '#e6a639',
+                            700: '#cc9332',
+                            800: '#b3802b',
+                            900: '#996d24',
+                        },
+                        'factorial-orange': {
+                            // Tangerine #FF9153
+                            50: '#fff4f0',
+                            100: '#ffe0d1',
+                            200: '#ffccb2',
+                            300: '#ffb893',
+                            400: '#ffa474',
+                            500: '#FF9153', // Tangerine - Primary
+                            600: '#e6824a',
+                            700: '#cc7341',
+                            800: '#b36438',
+                            900: '#99552f',
+                        },
+                        'factorial-midnight': {
+                            // Midnight #25253D
+                            50: '#e8e8eb',
+                            100: '#c1c1c7',
+                            200: '#9a9aa3',
+                            300: '#73737f',
+                            400: '#4c4c5b',
+                            500: '#25253D', // Midnight - Primary
+                            600: '#1e1e30',
+                            700: '#171723',
+                            800: '#101016',
+                            900: '#090909',
+                        },
+                        'blue-gray': {
+                            50: '#eceff1',
+                            100: '#cfd8dc',
+                            200: '#b0bec5',
+                            300: '#90a4ae',
+                            400: '#78909c',
+                            500: '#607d8b',
+                            600: '#546e7a',
+                            700: '#455a64',
+                            800: '#37474f',
+                            900: '#263238',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideInRight: {
+                            '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        /* Reset e Base Minimalista */
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: 'Fira Sans', system-ui, sans-serif !important;
         }
         
-        body {
-            font-family: 'Fira Sans', system-ui, sans-serif;
-            font-weight: 300;
-            line-height: 1.8;
-            color: #000;
-            background: #fff;
-            font-size: 16px;
+        body, html {
+            font-family: 'Fira Sans', system-ui, sans-serif !important;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 40px;
-        }
-        
-        /* Tipografia Minimalista */
-        h1 {
-            font-size: 64px;
-            font-weight: 100;
-            line-height: 1.2;
-            letter-spacing: -2px;
-            margin-bottom: 30px;
-        }
-        
-        h2 {
-            font-size: 48px;
-            font-weight: 100;
-            line-height: 1.2;
-            letter-spacing: -1px;
-            margin-bottom: 40px;
-        }
-        
-        h3 {
-            font-size: 32px;
-            font-weight: 300;
-            line-height: 1.3;
-            letter-spacing: -0.5px;
-            margin-bottom: 25px;
-        }
-        
-        h4 {
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 1.4;
-            margin-bottom: 20px;
-        }
-        
-        h5 {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        
-        p {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        
-        /* Labels e Uppercase */
-        .label {
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        /* Linhas Separadoras */
-        .black-line {
-            width: 100%;
-            height: 2px;
-            background: #000;
-            margin: 60px 0;
-        }
-        
-        /* Navegação Minimalista */
-        #navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            border-bottom: 1px solid #000;
-            z-index: 1000;
-            padding: 20px 0;
-        }
-        
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 18px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-decoration: none;
-            color: #000;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-        }
-        
-        .nav-link {
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #000;
-            font-weight: 600;
-            transition: opacity 0.3s;
-        }
-        
-        .nav-link:hover {
-            opacity: 0.6;
-        }
-        
-        /* Hero Section Minimalista */
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 120px 40px 80px;
-            text-align: center;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .hero .subtitle {
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
-        
-        /* Seções */
-        section {
-            padding: 100px 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 80px;
-        }
-        
-        /* Cards Minimalistas */
-        .card {
-            padding: 40px;
-            border: 1px solid #000;
-            margin-bottom: 40px;
-            transition: transform 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        /* Tabelas Minimalistas */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-        }
-        
-        .data-table th {
-            text-align: left;
-            padding: 15px 10px;
-            border-bottom: 2px solid #000;
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-        
-        .data-table td {
-            padding: 15px 10px;
-            border-bottom: 1px solid #e0e0e0;
-            font-size: 14px;
-        }
-        
-        .data-table tr:last-child td {
-            border-bottom: 2px solid #000;
-            font-weight: 700;
-        }
-        
-        /* Highlight Box */
-        .highlight-box {
-            background: #000;
-            color: #fff;
-            padding: 60px;
-            margin: 60px 0;
-        }
-        
-        .highlight-box h3 {
-            margin-bottom: 30px;
-        }
-        
-        /* Value Items */
-        .value-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .value-item:last-child {
-            border-bottom: none;
-        }
-        
-        .value-label {
-            font-weight: 400;
-        }
-        
-        .value-amount {
-            font-size: 24px;
-            font-weight: 300;
-        }
-        
-        /* Cores Factorial (aplicadas de forma sutil) */
-        .factorial-accent {
-            color: #FF355E;
-        }
-        
-        .factorial-green-accent {
-            color: #07A2AD;
-        }
-        
-        .factorial-yellow-accent {
-            color: #FFB940;
-        }
-        
-        /* Animações Suaves */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.8s ease-in;
+        h1, h2, h3, h4, h5, h6, p, span, div, a, li, ul {
+            font-family: 'Fira Sans', system-ui, sans-serif !important;
         }
         
         @keyframes barGrow {
@@ -285,14 +137,24 @@
             to { width: var(--target-width); }
         }
         
-        .animated-bar {
-            animation: barGrow 1.5s ease-out forwards;
-            animation-delay: var(--delay, 0s);
-        }
-        
         @keyframes numberCount {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes circleProgress {
+            from { stroke-dashoffset: 283; }
+            to { stroke-dashoffset: var(--target-offset); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        
+        .animated-bar {
+            animation: barGrow 1.5s ease-out forwards;
+            animation-delay: var(--delay, 0s);
         }
         
         .animated-number {
@@ -300,247 +162,170 @@
             animation-delay: var(--delay, 0s);
         }
         
-        /* Botões Minimalistas */
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            border: 2px solid #000;
-            text-decoration: none;
-            color: #000;
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 600;
-            transition: all 0.3s;
-            margin-top: 40px;
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            background-size: 1000px 100%;
+            animation: shimmer 2s infinite;
         }
         
-        .cta-button:hover {
-            background: #000;
-            color: #fff;
+        .gradient-text {
+            background: linear-gradient(135deg, #FF355E 0%, #07A2AD 50%, #FFB940 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
-        /* Grid Minimalista */
-        .grid {
-            display: grid;
-            gap: 40px;
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-        .grid-2 {
-            grid-template-columns: repeat(2, 1fr);
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         
-        .grid-3 {
-            grid-template-columns: repeat(3, 1fr);
+        .stat-card {
+            position: relative;
+            overflow: hidden;
         }
         
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 20px;
-            }
-            
-            h1 {
-                font-size: 40px;
-            }
-            
-            h2 {
-                font-size: 32px;
-            }
-            
-            .grid-2,
-            .grid-3 {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-links {
-                display: none;
-            }
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
         }
         
-        /* Speaker Notes */
-        .speaker-notes {
-            background: #f5f5f5;
-            padding: 30px;
-            border-left: 4px solid #000;
-            margin: 40px 0;
-        }
-        
-        .speaker-notes p:first-child {
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .speaker-notes p:last-child {
-            font-size: 13px;
-            font-style: italic;
-            line-height: 1.8;
-        }
-        
-        /* Utilitários para manter compatibilidade */
-        .fade-in {
-            opacity: 1;
-        }
-        
-        /* Remover estilos Tailwind que possam conflitar */
-        [class*="bg-"],
-        [class*="text-"],
-        [class*="p-"],
-        [class*="m-"],
-        [class*="flex"],
-        [class*="grid"] {
-            /* Mantém funcionalidade mas permite override */
+        .stat-card:hover::before {
+            left: 100%;
         }
     </style>
 </head>
-<body>
+<body class="antialiased bg-gray-50">
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#manifesto" class="logo">FACTORIAL AI</a>
-            <ul class="nav-links">
-                <li><a href="#manifesto" class="nav-link">MANIFESTO</a></li>
-                <li><a href="#historia" class="nav-link">HISTÓRIA</a></li>
-                <li><a href="#blocos" class="nav-link">BLOCOS</a></li>
-                <li><a href="#terminologia" class="nav-link">TERMINOLOGIA</a></li>
-                <li><a href="#materiais" class="nav-link">MATERIAIS</a></li>
-            </ul>
+    <div class="px-10 sticky top-4 z-50">
+        <div class="mx-auto container">
+            <nav class="block w-full max-w-screen-2xl rounded-xl px-8 shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border-white/80 bg-white text-white z-50 mt-6 relative border-0 pr-3 py-3 pl-6">
+                <div class="flex items-center justify-between">
+                    <p class="block antialiased font-sans text-blue-gray-900 text-lg font-bold">Factorial AI Academy</p>
+                    <ul class="ml-10 hidden items-center gap-8 lg:flex">
+                        <li><a href="#manifesto" class="antialiased font-sans text-base leading-relaxed flex items-center gap-2 font-medium text-gray-900">O Manifesto</a></li>
+                        <li><a href="#historia" class="antialiased font-sans text-base leading-relaxed flex items-center gap-2 font-medium text-gray-900">História</a></li>
+                        <li><a href="#blocos" class="antialiased font-sans text-base leading-relaxed flex items-center gap-2 font-medium text-gray-900">Os Blocos</a></li>
+                        <li><a href="#materiais" class="antialiased font-sans text-base leading-relaxed flex items-center gap-2 font-medium text-gray-900">Materiais</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
 
     <!-- Hero Section -->
-    <section id="manifesto" class="hero">
-        <div class="hero-content fade-in">
-            <p class="subtitle">Masterclass Estratégica — 120 minutos</p>
-            <h1>
-                IA não é um aplicativo.<br>
-                É o novo sistema nervoso da Factorial.
-            </h1>
-            <p style="font-size: 20px; line-height: 1.8; max-width: 700px; margin: 0 auto 60px;">
-                Empresas competem por <strong>inteligência</strong> — a capacidade de perceber, aprender e decidir antes dos outros. A IA não é software — é o sistema nervoso que sincroniza o corpo inteiro da empresa.
-            </p>
-            
-            <!-- Objetivos de Aprendizagem -->
-            <div class="card" style="text-align: left; margin-bottom: 40px;">
-                <h3 style="font-size: 24px; margin-bottom: 30px;">Objetivos de Aprendizagem</h3>
-                <ol style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">
-                        <span style="position: absolute; left: 0; font-weight: 600; color: #FF355E;">1.</span>
-                        <span>Aplicar o método R–C–O para transformar pedidos vagos em instruções precisas para IA, aumentando a qualidade das saídas em pelo menos 40%.</span>
-                    </li>
-                    <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">
-                        <span style="position: absolute; left: 0; font-weight: 600; color: #FF355E;">2.</span>
-                        <span>Identificar e aplicar os 3 pilares da IA (Algoritmos, Dados, Computação) em pelo menos um caso prático da sua área de atuação.</span>
-                    </li>
-                    <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">
-                        <span style="position: absolute; left: 0; font-weight: 600; color: #FF355E;">3.</span>
-                        <span>Substituir uma tarefa manual por uma versão assistida por IA nas próximas 72 horas, documentando ganho de tempo e qualidade.</span>
-                    </li>
-                </ol>
+    <section id="manifesto" class="!flex min-h-[75vh] w-full items-center justify-between px-10 py-20">
+        <div class="absolute inset-0 ml-auto w-[920px] h-full rounded-bl-[100px] bg-gradient-to-br from-gray-900 via-blue-gray-900 to-gray-800 opacity-10"></div>
+        <div class="container mx-auto relative z-10">
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-12 lg:col-span-8 relative flex flex-col bg-clip-border text-gray-700 rounded-xl bg-white/80 p-12 shadow-xl backdrop-blur-md">
+                    <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-factorial-500 mb-4 uppercase animate-fade-in">Masterclass Estratégica</h6>
+                    <h1 class="block antialiased tracking-normal font-sans font-extrabold text-blue-gray-900 lg:text-6xl !leading-tight text-4xl mb-6 animate-slide-up">
+                        IA não é um aplicativo.<br>
+                        <span class="gradient-text">É o novo sistema nervoso da Factorial.</span>
+                    </h1>
+                    <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-gray-600 mb-10 max-w-2xl">
+                        Há 20 anos, empresas competiam por capital e eficiência. Hoje, elas competem por <strong>inteligência</strong> — a capacidade de perceber, aprender e decidir antes dos outros. A IA conecta dados, pessoas e decisões. Ela não é mais um software — é o sistema nervoso que sincroniza o corpo inteiro da empresa.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#blocos" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-4 px-8 rounded-lg bg-gradient-to-r from-factorial-500 to-factorial-green-500 text-white shadow-lg shadow-factorial-500/30 hover:shadow-xl hover:shadow-factorial-500/40 hover:scale-105 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none transform transition-transform duration-300">
+                            Iniciar a Jornada
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Speaker Notes: Hero -->
-            <div class="speaker-notes">
-                <p>📝 SPEAKER NOTES (45s)</p>
-                <p>
-                    "Bem-vindos. Nos próximos 120 minutos, vocês vão entender por que a IA não é mais uma ferramenta — é a infraestrutura que conecta tudo na Factorial. Não vamos falar de tecnologia. Vamos falar de como pensar diferente. Ao final, cada um de vocês terá um plano concreto para aplicar IA na próxima semana. Vamos começar?"
-                </p>
-            </div>
-            
-            <a href="#blocos" class="cta-button">Iniciar a Jornada</a>
         </div>
     </section>
 
     <!-- História da IA -->
-    <section id="historia">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="label factorial-accent">Contexto Histórico</span>
-                <h2>
+    <section id="historia" class="px-8 py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container mx-auto">
+            <div class="mb-12 text-center animate-fade-in">
+                <span class="text-factorial-500 font-bold tracking-widest uppercase text-sm mb-2 block">Contexto Histórico</span>
+                <h2 class="block antialiased tracking-normal font-sans text-4xl font-extrabold leading-[1.3] text-blue-gray-900 mb-4">
                     "Aconteceu gradualmente, depois de repente..."
                 </h2>
-                <p style="font-size: 18px; font-style: italic; max-width: 800px; margin: 0 auto;">
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto italic">
                     Como Ernest Hemingway descreveu as mudanças mais profundas do mundo. A IA explodiu em 2023, mas sua história começou há quase um século.
                 </p>
-                
-                <!-- Speaker Notes -->
-                <div class="speaker-notes" style="max-width: 800px; margin: 40px auto 0;">
-                    <p>📝 SPEAKER NOTES (45s)</p>
-                    <p>
-                        "A IA não apareceu do nada em 2023. Ela foi construída ao longo de 70 anos. Em 1950, Turing perguntou se máquinas podem pensar. Em 1997, Deep Blue venceu Kasparov. Em 2022, ChatGPT explodiu. Cada marco foi possível porque os anteriores existiam. Vamos ver essa evolução."
-                    </p>
-                </div>
             </div>
             
-            <div class="black-line"></div>
-            
-            <div class="grid grid-2 fade-in" style="margin-bottom: 60px;">
-                <div class="card">
-                    <h3 style="font-size: 28px; margin-bottom: 20px;">1950: A Pergunta de Turing</h3>
-                    <p style="margin-bottom: 20px;">
-                        Alan Turing, o codebreaker que ajudou a vencer a Segunda Guerra Mundial, fez uma pergunta que mudaria tudo: <strong>"As máquinas podem pensar?"</strong>
-                    </p>
-                    <p style="font-size: 14px; color: #666;">
-                        Ele criou o "Teste de Turing" — ainda usado hoje para medir se uma IA é indistinguível de um humano. Em 2024, nenhum computador passou definitivamente, mas chatbots modernos estão muito próximos.
-                    </p>
-                </div>
-                
-                <div class="card">
-                    <h3 style="font-size: 28px; margin-bottom: 20px;">1956: O Nascimento da IA</h3>
-                    <p style="margin-bottom: 20px;">
-                        A <strong>Conferência de Dartmouth</strong> reuniu pesquisadores de múltiplas áreas para explorar "máquinas pensantes". Foi aqui que o termo <strong>"Inteligência Artificial"</strong> foi usado pela primeira vez.
-                    </p>
-                    <p style="font-size: 14px; color: #666;">
-                        Os visionários daquela conferência não sabiam, mas estavam criando um campo que transformaria o mundo 70 anos depois.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Marcos Históricos -->
-            <div class="relative">
+            <!-- Linha do Tempo Simplificada -->
+            <div class="relative max-w-4xl mx-auto">
                 <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-200 via-purple-200 to-green-200 hidden lg:block"></div>
-                <div class="space-y-8">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="lg:text-right">
-                            <div class="inline-block bg-white rounded-xl p-6 shadow-md border-2 border-blue-200 max-w-md">
-                                <div class="text-2xl font-bold text-blue-600 mb-2">1997</div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-2">Deep Blue vs Kasparov</h4>
-                                <p class="text-gray-600 text-sm">
-                                    O supercomputador da IBM venceu o campeão mundial de xadrez Gary Kasparov. Pela primeira vez, o mundo viu uma máquina superar um humano em uma tarefa complexa.
-                                </p>
+                <div class="space-y-6">
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="inline-block bg-white rounded-xl p-4 shadow-md border-2 border-blue-200">
+                                <div class="text-xl font-bold text-blue-600">1950</div>
+                                <p class="text-sm text-gray-700 mt-1">A Pergunta de Turing</p>
                             </div>
                         </div>
-                        <div class="lg:text-left">
-                            <div class="inline-block bg-white rounded-xl p-6 shadow-md border-2 border-purple-200 max-w-md">
-                                <div class="text-2xl font-bold text-purple-600 mb-2">2011</div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-2">Watson vence Jeopardy</h4>
-                                <p class="text-gray-600 text-sm">
-                                    O IBM Watson venceu o programa de TV americano Jeopardy, demonstrando que IA poderia processar linguagem natural e conhecimento geral em tempo real.
-                                </p>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <div class="w-1/2 pl-8 text-left">
+                            <div class="inline-block bg-white rounded-xl p-4 shadow-md border-2 border-purple-200">
+                                <div class="text-xl font-bold text-purple-600">1956</div>
+                                <p class="text-sm text-gray-700 mt-1">Nascimento da IA (Dartmouth)</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="lg:text-right">
-                            <div class="inline-block bg-white rounded-xl p-6 shadow-md border-2 border-green-200 max-w-md">
-                                <div class="text-2xl font-bold text-factorial-600 mb-2">2018</div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-2">AlphaFold: Proteínas</h4>
-                                <p class="text-gray-600 text-sm">
-                                    O Google DeepMind criou o AlphaFold, que prevê a estrutura 3D de quase todas as proteínas do corpo humano. Isso acelera massivamente a pesquisa de medicamentos e vacinas.
-                                </p>
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="inline-block bg-white rounded-xl p-4 shadow-md border-2 border-green-200">
+                                <div class="text-xl font-bold text-green-600">1997</div>
+                                <p class="text-sm text-gray-700 mt-1">Deep Blue vs Kasparov</p>
                             </div>
                         </div>
-                        <div class="lg:text-left">
-                            <div class="inline-block bg-white rounded-xl p-6 shadow-md border-2 border-yellow-200 max-w-md">
-                                <div class="text-2xl font-bold text-factorial-green-600 mb-2">2022</div>
-                                <h4 class="text-xl font-bold text-gray-900 mb-2">ChatGPT: O Momento</h4>
-                                <p class="text-gray-600 text-sm">
-                                    O ChatGPT da OpenAI alcançou 100 milhões de usuários em apenas 2 meses — o produto de consumo que mais cresceu na história. Isso levou a IA para o mainstream em 2023.
-                                </p>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-factorial-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <div class="w-1/2 pl-8 text-left">
+                            <div class="inline-block bg-white rounded-xl p-4 shadow-md border-2 border-factorial-200">
+                                <div class="text-xl font-bold text-factorial-600">2011</div>
+                                <p class="text-sm text-gray-700 mt-1">Watson vence Jeopardy</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="inline-block bg-white rounded-xl p-4 shadow-md border-2 border-factorial-green-200">
+                                <div class="text-xl font-bold text-factorial-green-600">2018</div>
+                                <p class="text-sm text-gray-700 mt-1">AlphaFold: Proteínas</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-factorial-green-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-factorial-yellow-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <div class="w-1/2 pl-8 text-left">
+                            <div class="inline-block bg-white rounded-xl p-4 shadow-md border-2 border-factorial-yellow-200">
+                                <div class="text-xl font-bold text-factorial-yellow-600">2022</div>
+                                <p class="text-sm text-gray-700 mt-1">ChatGPT: O Momento</p>
                             </div>
                         </div>
                     </div>
@@ -593,87 +378,45 @@
     </section>
 
     <!-- Os 6 Blocos -->
-    <section id="blocos">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="label factorial-accent">Estrutura da Aula</span>
-                <h2>Os 6 Blocos da Transformação</h2>
-                <p style="font-size: 18px; max-width: 800px; margin: 0 auto;">
-                    Uma jornada de 90 minutos para redefinir como a Factorial pensa, decide e opera
-                </p>
-            </div>
-            
-            <div class="black-line"></div>
+    <section id="blocos" class="container mx-auto px-8 py-24">
+        <div class="mb-16 grid place-items-center text-center">
+            <span class="text-blue-500 font-bold tracking-widest uppercase text-sm mb-2">Estrutura da Aula</span>
+            <h2 class="block antialiased tracking-normal font-sans text-4xl font-extrabold leading-[1.3] text-blue-gray-900 mb-4">
+                Os 6 Blocos da Transformação
+            </h2>
+            <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-500 lg:w-7/12">
+                Uma jornada de 90 minutos para redefinir como a Factorial pensa, decide e opera
+            </p>
+        </div>
 
+        <div class="space-y-20">
             <!-- BLOCO 1 -->
-            <div style="margin-bottom: 100px;">
-                <div class="grid grid-2" style="gap: 60px; margin-bottom: 60px;">
-                    <div>
-                        <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
-                            <span style="font-size: 48px; font-weight: 100; color: #FF355E;">1</span>
-                            <div>
-                                <h3 style="font-size: 32px; margin-bottom: 10px;">O Novo Sistema Nervoso da Organização</h3>
-                                <p class="label" style="margin: 0;">10 minutos</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Objetivo do Bloco -->
-                        <div class="card" style="margin-bottom: 30px;">
-                            <p class="label" style="margin-bottom: 10px;">🎯 Objetivo</p>
-                            <p style="font-size: 14px; margin: 0;">Reposicionar IA de "ferramenta" para "infraestrutura estratégica" que conecta dados, pessoas e decisões.</p>
-                        </div>
-                        
-                        <!-- Exemplo Prático -->
-                        <div class="card" style="margin-bottom: 30px;">
-                            <p class="label" style="margin-bottom: 10px;">💡 Exemplo Prático</p>
-                            <p style="font-size: 14px; margin: 0;">
-                                Um gestor de RH usa IA para cruzar dados de desempenho, clima organizacional e feedbacks 360° — gerando insights que levariam semanas para compilar manualmente. A IA não substitui o julgamento humano, mas amplifica a capacidade de decisão baseada em evidência.
-                            </p>
-                        </div>
-                        
-                        <!-- Micro Exercício -->
-                        <div class="card" style="margin-bottom: 30px;">
-                            <p class="label" style="margin-bottom: 10px;">✏️ Micro Exercício (3 passos)</p>
-                            <ol style="list-style: decimal; padding-left: 20px; font-size: 14px; line-height: 2;">
-                                <li>Liste 3 decisões que você tomou esta semana baseadas apenas em intuição.</li>
-                                <li>Para cada uma, identifique quais dados poderiam ter embasado melhor a decisão.</li>
-                                <li>Escreva uma frase: "Se eu tivesse acesso a [dado X] naquele momento, eu teria [ação Y]."</li>
-                            </ol>
-                        </div>
-                        
-                        <!-- Speaker Notes -->
-                        <div class="speaker-notes">
-                            <p>📝 SPEAKER NOTES (50s)</p>
-                            <p>
-                                "Pensem na última decisão importante que vocês tomaram. Foi baseada em quê? Intuição? Experiência? Agora imaginem se vocês tivessem acesso instantâneo a todos os dados relevantes — histórico, padrões, contexto. É isso que a IA faz. Ela não decide por você. Ela amplifica sua capacidade de decidir melhor. Vamos ao exercício."
-                            </p>
-                        </div>
-                        
-                        <p style="font-size: 18px; line-height: 1.8; margin: 40px 0;">
-                            Quebrar a percepção antiga de "IA como ferramenta" e reposicioná-la como infraestrutura estratégica. A IA conecta silos em fluxo cognitivo e protege a intuição com evidência.
-                        </p>
-                        
-                        <!-- Transição para Bloco 2 -->
-                        <div class="card" style="border-left: 4px solid #FFB940;">
-                            <p class="label" style="margin-bottom: 10px;">➡️ Transição</p>
-                            <p style="font-size: 14px; font-style: italic; margin: 0;">
-                                "Agora que entendemos o que a IA é, vamos descobrir como ela funciona. Os 3 pilares que explicam por que a IA explodiu agora."
-                            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-100 text-factorial-600 font-bold text-2xl animate-pulse-slow">1</span>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900">O Novo Sistema Nervoso da Organização</h3>
+                            <p class="text-sm text-gray-500 mt-1">10 minutos</p>
                         </div>
                     </div>
-                    
-                    <div class="highlight-box">
-                        <h4 style="font-size: 24px; margin-bottom: 30px;">Intenção Cognitiva</h4>
-                        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-                            Fazer o colaborador enxergar IA como <strong>infraestrutura viva</strong>, não como ferramenta isolada.
-                        </p>
-                        <p style="font-size: 14px; font-style: italic; opacity: 0.9;">
-                            "Se a IA é o sistema nervoso da Factorial, o que eu faço influencia diretamente a inteligência coletiva."
-                        </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Quebrar a percepção antiga de "IA como ferramenta" e reposicioná-la como infraestrutura estratégica. A IA conecta silos em fluxo cognitivo e protege a intuição com evidência.
+                    </p>
+                    <div class="bg-gray-50 rounded-lg p-6 border-l-4 border-blue-500">
+                        <p class="text-gray-700 font-medium mb-2">💬 Dinâmica:</p>
+                        <p class="text-gray-600">"Quantas decisões do seu time são tomadas hoje baseadas em intuição — e quantas são baseadas em evidência?"</p>
                     </div>
                 </div>
-                
-                <div class="black-line"></div>
+                <div class="bg-gradient-to-br from-factorial-500 to-factorial-green-500 rounded-2xl p-8 text-white shadow-2xl hover:shadow-factorial-500/50 transition-shadow duration-300">
+                    <h4 class="text-xl font-bold mb-4">Intenção Cognitiva</h4>
+                    <p class="text-white/90 mb-4">
+                        Fazer o colaborador enxergar IA como <strong>infraestrutura viva</strong>, não como ferramenta isolada.
+                    </p>
+                    <p class="text-sm italic text-white/80">
+                        "Se a IA é o sistema nervoso da Factorial, o que eu faço influencia diretamente a inteligência coletiva."
+                    </p>
+                </div>
             </div>
 
             <!-- BLOCO 2 -->
@@ -686,50 +429,9 @@
                             <p class="text-sm text-gray-500 mt-1">25 minutos</p>
                         </div>
                     </div>
-                    
-                    <!-- Objetivo do Bloco -->
-                    <div class="bg-factorial-green-50 rounded-lg p-4 mb-4 max-w-3xl mx-auto border-l-4 border-factorial-green-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">🎯 Objetivo:</p>
-                        <p class="text-sm text-gray-700">Compreender os 3 pilares (Algoritmos, Dados, Computação) e como eles se combinam para criar inteligência artificial.</p>
-                    </div>
-                    
-                    <!-- Exemplo Prático -->
-                    <div class="bg-white rounded-lg p-4 mb-4 max-w-3xl mx-auto border border-gray-200">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">💡 Exemplo Prático:</p>
-                        <p class="text-sm text-gray-600">
-                            ChatGPT funciona porque: (1) Algoritmos de Transformers processam linguagem, (2) foi treinado com 570GB de textos da internet, (3) roda em 10.000 GPUs da Microsoft. Sem qualquer um desses 3 pilares, não existiria.
-                        </p>
-                    </div>
-                    
-                    <!-- Micro Exercício -->
-                    <div class="bg-factorial-yellow-50 rounded-lg p-4 mb-4 max-w-3xl mx-auto border-l-4 border-factorial-yellow-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">✏️ Micro Exercício (3 passos):</p>
-                        <ol class="text-sm text-gray-700 space-y-1 ml-4 list-decimal">
-                            <li>Escolha uma tarefa do seu dia a dia que você gostaria de automatizar com IA.</li>
-                            <li>Identifique qual dos 3 pilares seria o mais crítico: você precisa de mais dados? Melhor algoritmo? Mais poder computacional?</li>
-                            <li>Escreva uma frase explicando por que esse pilar é o limitante.</li>
-                        </ol>
-                    </div>
-                    
-                    <!-- Speaker Notes -->
-                    <div class="bg-gray-100 rounded-lg p-4 mb-4 max-w-3xl mx-auto border border-gray-300">
-                        <p class="text-xs font-semibold text-gray-700 mb-2">📝 SPEAKER NOTES (60s):</p>
-                        <p class="text-xs text-gray-600 italic">
-                            "Por que a IA explodiu agora? Não é porque alguém inventou algo novo. É porque três coisas convergiram: algoritmos melhores, dados massivos e computação barata. Vamos ver cada um. Algoritmos são o cérebro — dizem o que fazer. Dados são o combustível — dizem o que aprender. Computação é a máquina — dá capacidade de processar. Juntos, formam a mente híbrida: humano + máquina."
-                        </p>
-                    </div>
-                    
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                         Redefinir o que é "inteligência" e entender os três componentes fundamentais que explicam por que a IA explodiu agora: <strong>Algoritmos, Dados e Computação</strong>.
                     </p>
-                    
-                    <!-- Transição para Bloco 3 -->
-                    <div class="bg-factorial-50 rounded-lg p-4 max-w-3xl mx-auto mt-4 border-l-4 border-factorial-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">➡️ Transição:</p>
-                        <p class="text-sm text-gray-700 italic">
-                            "Agora que entendemos como a IA funciona, vamos ver como ela funciona especificamente na Factorial — o Factorial One."
-                        </p>
-                    </div>
                         </div>
 
                 <!-- Os 3 Pilares -->
@@ -877,73 +579,6 @@
                     </div>
                 </div>
 
-                <!-- Big Data -->
-                <div class="bg-gradient-to-br from-factorial-midnight-500 via-factorial-midnight-600 to-factorial-midnight-700 rounded-2xl p-8 text-white mt-8 shadow-2xl">
-                    <h4 class="text-2xl font-bold mb-6 text-center animate-fade-in">A Explosão de Dados: O Combustível da IA</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                        <div class="stat-card bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="text-4xl font-bold text-factorial-300 animated-number" data-target="90">0</div>
-                                <span class="text-2xl">%</span>
-                            </div>
-                            <p class="text-sm text-gray-200 mb-3">
-                                Dos dados do mundo foram criados nos últimos 2 anos
-                            </p>
-                            <div class="w-full bg-white/20 rounded-full h-3 overflow-hidden">
-                                <div class="animated-bar bg-gradient-to-r from-factorial-400 to-factorial-500 h-full rounded-full shimmer" style="--target-width: 90%; --delay: 0.3s"></div>
-                            </div>
-                        </div>
-                        <div class="stat-card bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="text-4xl font-bold text-factorial-green-300 animated-number" data-target="175">0</div>
-                                <span class="text-lg">ZB</span>
-                            </div>
-                            <p class="text-sm text-gray-200 mb-3">
-                                Zettabytes de dados serão gerados em 2025
-                            </p>
-                            <div class="w-full bg-white/20 rounded-full h-3 overflow-hidden">
-                                <div class="animated-bar bg-gradient-to-r from-factorial-green-400 to-factorial-green-500 h-full rounded-full shimmer" style="--target-width: 85%; --delay: 0.5s"></div>
-                            </div>
-                        </div>
-                        <div class="stat-card bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="text-4xl font-bold text-factorial-yellow-300 animated-number" data-target="29.3">0</div>
-                                <span class="text-lg">B</span>
-                            </div>
-                            <p class="text-sm text-gray-200 mb-3">
-                                Dispositivos conectados gerando dados constantemente
-                            </p>
-                            <div class="w-full bg-white/20 rounded-full h-3 overflow-hidden">
-                                <div class="animated-bar bg-gradient-to-r from-green-400 to-green-500 h-full rounded-full shimmer" style="--target-width: 95%; --delay: 0.7s"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                        <h5 class="font-bold mb-3 text-lg">Os 4 V's do Big Data</h5>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div>
-                                <p class="text-xs font-semibold text-blue-300 mb-1">VOLUME</p>
-                                <p class="text-xs text-gray-300">Quantidade massiva de dados</p>
-                            </div>
-                            <div>
-                                <p class="text-xs font-semibold text-purple-300 mb-1">VELOCIDADE</p>
-                                <p class="text-xs text-gray-300">Gerados em tempo real</p>
-                            </div>
-                            <div>
-                                <p class="text-xs font-semibold text-factorial-green-300 mb-1">VARIEDADE</p>
-                                <p class="text-xs text-gray-300">Textos, imagens, vídeos, áudio</p>
-                            </div>
-                            <div>
-                                <p class="text-xs font-semibold text-factorial-300 mb-1">VERACIDADE</p>
-                                <p class="text-xs text-gray-300">Qualidade e precisão</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-300 mt-6 text-center italic">
-                        "Dados são o novo petróleo" — mas só valem algo quando processados com IA para gerar insights e valor.
-                    </p>
-                </div>
-
                 <!-- Mente Híbrida -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
                     <div class="bg-white rounded-xl p-6 border border-gray-200">
@@ -992,187 +627,10 @@
                 </div>
             </div>
 
-            <!-- BLOCO 3 -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-100 text-factorial-600 font-bold text-2xl animate-pulse-slow">3</span>
-                        <div>
-                            <h3 class="text-3xl font-bold text-gray-900">A IA na Factorial: O Cérebro da Operação</h3>
-                            <p class="text-sm text-gray-500 mt-1">20 minutos</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Objetivo do Bloco -->
-                    <div class="bg-factorial-50 rounded-lg p-4 mb-4 border-l-4 border-factorial-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">🎯 Objetivo:</p>
-                        <p class="text-sm text-gray-700">Entender como o Factorial One funciona e quais são os 3 pilares de inteligência que ele utiliza.</p>
-                    </div>
-                    
-                    <!-- Exemplo Prático -->
-                    <div class="bg-white rounded-lg p-4 mb-4 border border-gray-200">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">💡 Exemplo Prático:</p>
-                        <p class="text-sm text-gray-600">
-                            Um gestor pergunta ao Factorial One: "Quais são os riscos de burnout no time de Vendas este trimestre?" A IA cruza dados de desempenho, horas trabalhadas, feedbacks e políticas da empresa — gerando um relatório em segundos que levaria dias para compilar manualmente.
-                        </p>
-                    </div>
-                    
-                    <!-- Micro Exercício -->
-                    <div class="bg-factorial-green-50 rounded-lg p-4 mb-4 border-l-4 border-factorial-green-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">✏️ Micro Exercício (3 passos):</p>
-                        <ol class="text-sm text-gray-700 space-y-1 ml-4 list-decimal">
-                            <li>Pense em uma pergunta que você faria ao Factorial One relacionada ao seu trabalho.</li>
-                            <li>Identifique quais dos 3 pilares (Dados Humanos, Processos Operacionais, Contexto Organizacional) seriam necessários para responder.</li>
-                            <li>Escreva a pergunta formatada no método R–C–O que veremos no próximo bloco.</li>
-                        </ol>
-                    </div>
-                    
-                    <!-- Speaker Notes -->
-                    <div class="bg-gray-100 rounded-lg p-4 mb-4 border border-gray-300">
-                        <p class="text-xs font-semibold text-gray-700 mb-2">📝 SPEAKER NOTES (45s):</p>
-                        <p class="text-xs text-gray-600 italic">
-                            "O Factorial One não é um chatbot genérico. Ele conhece nossa empresa. Sabe nossos processos, políticas, cultura. Quando você pergunta algo, ele não busca na internet — busca no nosso conhecimento interno. É isso que o torna poderoso. Vamos ver os 3 pilares que ele usa."
-                        </p>
-                    </div>
-                    
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        O <strong>Factorial One</strong> não é um produto que vendemos — é a inteligência que nos conecta. Ele entende cargos, políticas, times, contextos regionais e relações humanas.
-                    </p>
-                    
-                    <!-- Transição para Bloco 4 -->
-                    <div class="bg-factorial-yellow-50 rounded-lg p-4 border-l-4 border-factorial-yellow-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">➡️ Transição:</p>
-                        <p class="text-sm text-gray-700 italic">
-                            "Agora que sabemos o que o Factorial One é, vamos aprender como falar com ele. O método R–C–O transforma pedidos vagos em instruções precisas."
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="bg-white rounded-lg p-4 border border-gray-200">
-                            <h5 class="font-semibold text-gray-900 mb-2">Evolução do Factorial One</h5>
-                            <div class="text-sm text-gray-600 space-y-2">
-                                <div><strong>Chatbot:</strong> Responde perguntas</div>
-                                <div><strong>Copiloto:</strong> Executa tarefas</div>
-                                <div><strong>Agente:</strong> Raciocina com contexto e propõe soluções</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 border-2 border-green-200">
-                    <h4 class="text-xl font-bold mb-4 text-gray-900">Três Pilares de Inteligência</h4>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">📊</span>
-                            <div>
-                                <h5 class="font-semibold text-gray-900">Dados Humanos</h5>
-                                <p class="text-sm text-gray-600">Histórico de desempenho, clima e engajamento</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">⚙️</span>
-                            <div>
-                                <h5 class="font-semibold text-gray-900">Processos Operacionais</h5>
-                                <p class="text-sm text-gray-600">Políticas, fluxos e integrações</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">🧠</span>
-                            <div>
-                                <h5 class="font-semibold text-gray-900">Contexto Organizacional</h5>
-                                <p class="text-sm text-gray-600">Cultura, valores e estrutura</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BLOCO 4 -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
-                <div class="order-2 lg:order-1">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-yellow-100 text-factorial-yellow-600 font-bold text-2xl animate-pulse-slow">4</span>
-                        <div>
-                            <h3 class="text-3xl font-bold text-gray-900">A Prática do Pensamento com IA</h3>
-                            <p class="text-sm text-gray-500 mt-1">20 minutos</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Objetivo do Bloco -->
-                    <div class="bg-factorial-yellow-50 rounded-lg p-4 mb-4 border-l-4 border-factorial-yellow-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">🎯 Objetivo:</p>
-                        <p class="text-sm text-gray-700">Dominar o método R–C–O para transformar pedidos vagos em instruções precisas que geram saídas de alta qualidade.</p>
-                    </div>
-                    
-                    <!-- Exemplo Prático -->
-                    <div class="bg-white rounded-lg p-4 mb-4 border border-gray-200">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">💡 Exemplo Prático:</p>
-                        <p class="text-sm text-gray-600">
-                            <strong>Vago:</strong> "Escreva um email para cliente."<br>
-                            <strong>R–C–O:</strong> Role: Gerente de Parcerias Sênior | Context: Parceiro 90 dias sem leads, tom consultivo | Output: Email curto com 3 CTAs e assunto A/B. O resultado é 3x mais relevante e acionável.
-                        </p>
-                    </div>
-                    
-                    <!-- Micro Exercício -->
-                    <div class="bg-factorial-green-50 rounded-lg p-4 mb-4 border-l-4 border-factorial-green-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">✏️ Micro Exercício (3 passos):</p>
-                        <ol class="text-sm text-gray-700 space-y-1 ml-4 list-decimal">
-                            <li>Pegue uma tarefa que você faria com IA hoje (ex: escrever email, criar relatório).</li>
-                            <li>Reescreva usando R–C–O: defina seu Role, o Context completo e o Output desejado.</li>
-                            <li>Compare mentalmente: qual versão geraria melhor resultado? Anote a diferença.</li>
-                        </ol>
-                    </div>
-                    
-                    <!-- Speaker Notes -->
-                    <div class="bg-gray-100 rounded-lg p-4 mb-4 border border-gray-300">
-                        <p class="text-xs font-semibold text-gray-700 mb-2">📝 SPEAKER NOTES (50s):</p>
-                        <p class="text-xs text-gray-600 italic">
-                            "A diferença entre usar IA bem e mal não é a ferramenta — é como você pede. 'Escreva um email' gera lixo. 'Como Gerente de Parcerias, para um parceiro sem leads há 90 dias, escreva um email consultivo com 3 CTAs' gera estratégia. R–C–O não é técnica — é disciplina de pensamento. Vamos praticar."
-                        </p>
-                    </div>
-                    
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        Ensinar o uso estruturado da IA com o método <strong>R–C–O</strong> (Role, Context, Output). Transformar pedidos vagos em instruções cirúrgicas.
-                    </p>
-                    
-                    <div class="bg-factorial-yellow-50 border-l-4 border-factorial-yellow-400 p-4 rounded-r-lg mb-6">
-                        <p class="text-factorial-yellow-900 font-medium">
-                            "Lixo entra, lixo sai. Clareza entra, estratégia sai."
-                        </p>
-                    </div>
-                    
-                    <!-- Transição para Bloco 5 -->
-                    <div class="bg-factorial-50 rounded-lg p-4 border-l-4 border-factorial-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">➡️ Transição:</p>
-                        <p class="text-sm text-gray-700 italic">
-                            "Agora que sabemos como usar IA, precisamos saber usar com responsabilidade. Vamos falar de ética, segurança e o que pode dar errado."
-                        </p>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2 bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
-                    <h4 class="text-xl font-bold mb-6 text-gray-900">Exemplo R–C–O</h4>
-                    <div class="space-y-4">
-                        <div class="p-4 bg-factorial-50 rounded-lg border border-factorial-200">
-                            <span class="text-xs font-bold text-factorial-600 uppercase tracking-wider">❌ Genérico</span>
-                            <p class="font-mono text-sm text-gray-700 mt-2">"Escreva um email para cliente"</p>
-                        </div>
-                        <div class="flex justify-center text-gray-400">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                        </div>
-                        <div class="p-4 bg-factorial-green-50 rounded-lg border border-factorial-green-200">
-                            <span class="text-xs font-bold text-factorial-green-600 uppercase tracking-wider">✅ R–C–O</span>
-                            <div class="font-mono text-sm text-gray-800 mt-2 space-y-1">
-                                <div><strong>Role:</strong> Gerente de Parcerias Sênior</div>
-                                <div><strong>Context:</strong> Parceiro 90 dias sem leads, tom consultivo</div>
-                                <div><strong>Output:</strong> Email curto com 3 CTAs e assunto A/B</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BLOCO 4.5: IA Generativa -->
-            <div class="bg-gradient-to-br from-factorial-50 via-factorial-green-50 to-factorial-yellow-50 rounded-3xl p-12 border-2 border-factorial-green-200 shadow-xl">
+            <!-- BLOCO 2.5: IA Generativa -->
+            <div class="bg-gradient-to-br from-factorial-50 via-factorial-green-50 to-factorial-yellow-50 rounded-3xl p-12 border-2 border-factorial-green-200 shadow-xl mt-12">
                 <div class="text-center mb-8">
-                    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-factorial-green-100 text-factorial-green-600 font-bold text-2xl mb-4 animate-pulse-slow">4.5</span>
+                    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-factorial-green-100 text-factorial-green-600 font-bold text-2xl mb-4 animate-pulse-slow">2.5</span>
                     <h3 class="text-3xl font-bold text-gray-900 mb-4">IA Generativa: A Revolução de 2023</h3>
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                         Entender o que é IA Generativa, como funciona e por que ela mudou tudo em 2023.
@@ -1247,6 +705,99 @@
                 </div>
             </div>
 
+            <!-- BLOCO 3 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-100 text-factorial-600 font-bold text-2xl animate-pulse-slow">3</span>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900">A IA na Factorial: O Cérebro da Operação</h3>
+                            <p class="text-sm text-gray-500 mt-1">20 minutos</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        O <strong>Factorial One</strong> não é um produto que vendemos — é a inteligência que nos conecta. Ele entende cargos, políticas, times, contextos regionais e relações humanas.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 class="font-semibold text-gray-900 mb-2">Evolução do Factorial One</h5>
+                            <div class="text-sm text-gray-600 space-y-2">
+                                <div><strong>Chatbot:</strong> Responde perguntas</div>
+                                <div><strong>Copiloto:</strong> Executa tarefas</div>
+                                <div><strong>Agente:</strong> Raciocina com contexto e propõe soluções</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 border-2 border-green-200">
+                    <h4 class="text-xl font-bold mb-4 text-gray-900">Três Pilares de Inteligência</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">📊</span>
+                            <div>
+                                <h5 class="font-semibold text-gray-900">Dados Humanos</h5>
+                                <p class="text-sm text-gray-600">Histórico de desempenho, clima e engajamento</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">⚙️</span>
+                            <div>
+                                <h5 class="font-semibold text-gray-900">Processos Operacionais</h5>
+                                <p class="text-sm text-gray-600">Políticas, fluxos e integrações</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">🧠</span>
+                            <div>
+                                <h5 class="font-semibold text-gray-900">Contexto Organizacional</h5>
+                                <p class="text-sm text-gray-600">Cultura, valores e estrutura</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOCO 4 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
+                <div class="order-2 lg:order-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-yellow-100 text-factorial-yellow-600 font-bold text-2xl animate-pulse-slow">4</span>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900">A Prática do Pensamento com IA</h3>
+                            <p class="text-sm text-gray-500 mt-1">20 minutos</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Ensinar o uso estruturado da IA com o método <strong>R–C–O</strong> (Role, Context, Output). Transformar pedidos vagos em instruções cirúrgicas.
+                    </p>
+                    <div class="bg-factorial-yellow-50 border-l-4 border-factorial-yellow-400 p-4 rounded-r-lg mb-6">
+                        <p class="text-factorial-yellow-900 font-medium">
+                            "Lixo entra, lixo sai. Clareza entra, estratégia sai."
+                        </p>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
+                    <h4 class="text-xl font-bold mb-6 text-gray-900">Exemplo R–C–O</h4>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-factorial-50 rounded-lg border border-factorial-200">
+                            <span class="text-xs font-bold text-factorial-600 uppercase tracking-wider">❌ Genérico</span>
+                            <p class="font-mono text-sm text-gray-700 mt-2">"Escreva um email para cliente"</p>
+                        </div>
+                        <div class="flex justify-center text-gray-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </div>
+                        <div class="p-4 bg-factorial-green-50 rounded-lg border border-factorial-green-200">
+                            <span class="text-xs font-bold text-factorial-green-600 uppercase tracking-wider">✅ R–C–O</span>
+                            <div class="font-mono text-sm text-gray-800 mt-2 space-y-1">
+                                <div><strong>Role:</strong> Gerente de Parcerias Sênior</div>
+                                <div><strong>Context:</strong> Parceiro 90 dias sem leads, tom consultivo</div>
+                                <div><strong>Output:</strong> Email curto com 3 CTAs e assunto A/B</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- BLOCO 5 -->
             <div class="space-y-8">
                 <div class="text-center mb-8">
@@ -1257,50 +808,9 @@
                             <p class="text-sm text-gray-500 mt-1">20 minutos</p>
                         </div>
                     </div>
-                    
-                    <!-- Objetivo do Bloco -->
-                    <div class="bg-factorial-50 rounded-lg p-4 mb-4 max-w-3xl mx-auto border-l-4 border-factorial-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">🎯 Objetivo:</p>
-                        <p class="text-sm text-gray-700">Compreender os 3 princípios fundamentais de uso ético de IA e identificar os principais riscos (vieses, alucinações, exposição de dados).</p>
-                    </div>
-                    
-                    <!-- Exemplo Prático -->
-                    <div class="bg-white rounded-lg p-4 mb-4 max-w-3xl mx-auto border border-gray-200">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">💡 Exemplo Prático:</p>
-                        <p class="text-sm text-gray-600">
-                            Um sistema de recrutamento treinado com dados históricos pode replicar vieses: se historicamente homens foram mais contratados para tech, a IA pode continuar priorizando homens. A solução: human-in-the-loop — o humano decide, a IA recomenda.
-                        </p>
-                    </div>
-                    
-                    <!-- Micro Exercício -->
-                    <div class="bg-factorial-green-50 rounded-lg p-4 mb-4 max-w-3xl mx-auto border-l-4 border-factorial-green-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-2">✏️ Micro Exercício (3 passos):</p>
-                        <ol class="text-sm text-gray-700 space-y-1 ml-4 list-decimal">
-                            <li>Pense em uma decisão crítica que você tomaria com apoio de IA (ex: contratação, avaliação de desempenho).</li>
-                            <li>Identifique qual dos 3 riscos (viés, alucinação, exposição) seria mais provável nesse caso.</li>
-                            <li>Escreva uma verificação que você faria antes de confiar na saída da IA.</li>
-                        </ol>
-                    </div>
-                    
-                    <!-- Speaker Notes -->
-                    <div class="bg-gray-100 rounded-lg p-4 mb-4 max-w-3xl mx-auto border border-gray-300">
-                        <p class="text-xs font-semibold text-gray-700 mb-2">📝 SPEAKER NOTES (55s):</p>
-                        <p class="text-xs text-gray-600 italic">
-                            "IA não é neutra. Ela aprende com dados que têm vieses históricos. Ela pode inventar informações convincentes mas falsas. Ela pode vazar dados se usada incorretamente. Por isso temos 3 princípios: humano decide, privacidade inegociável, verificação contínua. Confie, mas sempre verifique. Vamos ver exemplos reais do que pode dar errado."
-                        </p>
-                    </div>
-                    
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                         Garantir que todos entendam os riscos, limites e princípios éticos do uso de IA — especialmente em contextos de RH e dados sensíveis.
                     </p>
-                    
-                    <!-- Transição para Bloco 6 -->
-                    <div class="bg-factorial-yellow-50 rounded-lg p-4 max-w-3xl mx-auto mt-4 border-l-4 border-factorial-yellow-500">
-                        <p class="text-sm font-semibold text-gray-900 mb-1">➡️ Transição:</p>
-                        <p class="text-sm text-gray-700 italic">
-                            "Agora que sabemos usar IA com responsabilidade, vamos ao desafio final: transformar conhecimento em ação nas próximas 72 horas."
-                        </p>
-                    </div>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -1421,53 +931,9 @@
                             <p class="text-sm text-white/70 mt-1">10 minutos</p>
                         </div>
                     </div>
-                    
-                    <!-- Objetivo do Bloco -->
-                    <div class="bg-white/10 rounded-lg p-4 mb-4 max-w-3xl mx-auto border-l-4 border-white/30">
-                        <p class="text-sm font-semibold text-white mb-1">🎯 Objetivo:</p>
-                        <p class="text-sm text-white/90">Substituir uma tarefa manual por uma versão assistida por IA nas próximas 72 horas, documentando ganho de tempo e qualidade.</p>
-                    </div>
-                    
-                    <!-- Exemplo Prático -->
-                    <div class="bg-white/10 rounded-lg p-4 mb-4 max-w-3xl mx-auto border border-white/20">
-                        <p class="text-sm font-semibold text-white mb-2">💡 Exemplo Prático:</p>
-                        <p class="text-sm text-white/90">
-                            Um gestor de RH gasta 3 horas por ciclo escrevendo avaliações de desempenho. Com IA usando R–C–O, gera rascunhos em 15 minutos e revisa em mais 15 minutos. Ganho: 2h30 por ciclo. Em 4 ciclos/ano = 10 horas economizadas, que podem ser investidas em desenvolvimento de pessoas.
-                        </p>
-                    </div>
-                    
-                    <!-- Micro Exercício -->
-                    <div class="bg-white/10 rounded-lg p-4 mb-4 max-w-3xl mx-auto border-l-4 border-white/30">
-                        <p class="text-sm font-semibold text-white mb-2">✏️ Micro Exercício (3 passos):</p>
-                        <ol class="text-sm text-white/90 space-y-1 ml-4 list-decimal text-left">
-                            <li>Identifique uma tarefa repetitiva que você faz semanalmente (ex: relatórios, emails, análises).</li>
-                            <li>Estime quanto tempo você gasta nela por semana.</li>
-                            <li>Escreva um compromisso: "Nas próximas 72h, vou substituir [tarefa X] por uma versão com IA e documentar o resultado."</li>
-                        </ol>
-                    </div>
-                    
-                    <!-- Speaker Notes -->
-                    <div class="bg-white/10 rounded-lg p-4 mb-4 max-w-3xl mx-auto border border-white/20">
-                        <p class="text-xs font-semibold text-white mb-2">📝 SPEAKER NOTES (40s):</p>
-                        <p class="text-xs text-white/80 italic">
-                            "Saber sobre IA não muda nada. Fazer com IA muda tudo. Nas próximas 72 horas, cada um de vocês vai substituir uma tarefa manual por uma versão com IA. Não precisa ser perfeito. Precisa ser feito. E documentado. Vamos ver o impacto coletivo que isso pode gerar."
-                        </p>
-                    </div>
-                    
                     <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
                         Consolidar o aprendizado e provocar ação. A meta não é que as pessoas <em>saibam</em> sobre IA, mas que passem a <strong>agir com IA</strong> — diariamente.
                     </p>
-                    
-                    <!-- Mini Case com Cálculo de Impacto -->
-                    <div class="bg-white/10 rounded-lg p-6 mb-6 max-w-3xl mx-auto border border-white/20 text-left">
-                        <h4 class="text-xl font-bold text-white mb-4">📊 Mini Case: Impacto Coletivo</h4>
-                        <div class="space-y-3 text-sm text-white/90">
-                            <p><strong>Cenário:</strong> Time de 50 pessoas, cada uma economiza 1 hora por semana usando IA.</p>
-                            <p><strong>Cálculo:</strong> 50 pessoas × 1h/semana × 52 semanas = <strong>2.600 horas/ano</strong></p>
-                            <p><strong>Impacto:</strong> Se cada hora vale R$ 150 (custo médio), o ganho é de <strong>R$ 390.000/ano</strong> em produtividade.</p>
-                            <p><strong>Além do dinheiro:</strong> Essas horas podem ser reinvestidas em inovação, desenvolvimento de pessoas ou projetos estratégicos que antes não tinham capacidade.</p>
-                        </div>
-                    </div>
                     <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                         <h4 class="text-2xl font-bold mb-4">Desafio de 72 Horas</h4>
                         <p class="text-lg text-white/90 mb-6">
@@ -1491,67 +957,6 @@
                                 <p class="text-sm text-white/80">Se cada pessoa ganhasse 1h/dia usando IA, o que a Factorial poderia construir?</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Casos Reais Globais -->
-    <section class="px-8 py-24 bg-white border-t border-gray-100">
-        <div class="container mx-auto">
-            <div class="mb-16 grid place-items-center text-center">
-                <span class="text-factorial-500 font-bold tracking-widest uppercase text-sm mb-2">Impacto Real</span>
-                <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">Casos Reais de IA no Mundo</h2>
-                <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-500 lg:w-6/12">
-                    Exemplos concretos de como a IA está transformando indústrias e salvando vidas
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                <div class="bg-gradient-to-br from-factorial-50 to-factorial-100 rounded-xl p-6 border-2 border-factorial-200 card-hover">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="text-3xl animate-pulse-slow">🏥</span>
-                        <h4 class="text-xl font-bold text-gray-900">Detecção de Câncer de Mama</h4>
-                    </div>
-                    <p class="text-sm text-gray-700 mb-4">
-                        <strong>Estudo sueco de 2023:</strong> IA apoiando análise de mamografias foi tão boa quanto dois radiologistas trabalhando juntos.
-                    </p>
-                    <div class="bg-white rounded-lg p-4">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-factorial-600 animated-number mb-2" data-target="50">0</div>
-                                <span class="text-lg">%</span>
-                                <p class="text-xs text-gray-600 mt-1">Redução na carga de trabalho</p>
-                                <div class="mt-2 w-full bg-factorial-100 rounded-full h-2">
-                                    <div class="animated-bar bg-factorial-500 h-2 rounded-full" style="--target-width: 50%; --delay: 0.3s"></div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-bold text-factorial-green-600 animated-number mb-2" data-target="20">0</div>
-                                <span class="text-lg">%</span>
-                                <p class="text-xs text-gray-600 mt-1">Mais cânceres detectados cedo</p>
-                                <div class="mt-2 w-full bg-factorial-100 rounded-full h-2">
-                                    <div class="animated-bar bg-factorial-500 h-2 rounded-full" style="--target-width: 20%; --delay: 0.5s"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gradient-to-br from-factorial-green-50 to-factorial-green-100 rounded-xl p-6 border-2 border-factorial-green-200 card-hover">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="text-3xl">🧬</span>
-                        <h4 class="text-xl font-bold text-gray-900">AlphaFold: Estrutura de Proteínas</h4>
-                    </div>
-                    <p class="text-sm text-gray-700 mb-4">
-                        O Google DeepMind criou o AlphaFold, que prevê a estrutura 3D de quase todas as proteínas do corpo humano.
-                    </p>
-                    <div class="bg-white rounded-lg p-4">
-                        <p class="text-xs text-gray-600 mb-2">
-                            <strong>Impacto:</strong> Acelera massivamente a pesquisa de medicamentos, vacinas e tratamento de doenças como Alzheimer.
-                        </p>
-                        <p class="text-xs text-gray-500 italic">
-                            Tarefa que levaria décadas, agora leva dias.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -1604,188 +1009,6 @@
         </div>
     </section>
 
-    <!-- Terminologia -->
-    <section id="terminologia" class="px-8 py-24 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="container mx-auto">
-            <div class="mb-12 grid place-items-center text-center">
-                <span class="text-blue-500 font-bold tracking-widest uppercase text-sm mb-2">Glossário Essencial</span>
-                <h2 class="block antialiased tracking-normal font-sans text-4xl font-extrabold leading-[1.3] text-blue-gray-900 mb-4">
-                    Terminologia de IA para Líderes
-                </h2>
-                <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-500 lg:w-6/12">
-                    Termos-chave que todo líder precisa conhecer para navegar o mundo da IA
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Narrow AI -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Narrow AI (IA Estreita)</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        IA projetada para realizar apenas uma tarefa específica ou conjunto de tarefas.
-                    </p>
-                    <div class="bg-blue-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Exemplos:</p>
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li>• Assistente de voz (Alexa, Siri)</li>
-                            <li>• Sistema de xadrez</li>
-                            <li>• Detecção de câncer em imagens</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- General AI -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">General AI (AGI)</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        IA que pode realizar qualquer tarefa intelectual que um humano "médio" pode fazer.
-                    </p>
-                    <div class="bg-purple-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Status:</p>
-                        <p class="text-xs text-gray-600">
-                            Ainda não existe. Chatbots modernos mostram "faíscas" de AGI, mas não são verdadeiramente gerais.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- LLM -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">LLM (Large Language Model)</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Modelo de IA treinado em massivos datasets de texto para entender e gerar linguagem humana.
-                    </p>
-                    <div class="bg-factorial-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Exemplos:</p>
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li>• GPT-4 (ChatGPT)</li>
-                            <li>• Claude (Anthropic)</li>
-                            <li>• Gemini (Google)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Foundation Models -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Foundation Models</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Modelos de IA treinados em amplos datasets que podem ser aplicados a uma ampla gama de tarefas.
-                    </p>
-                    <div class="bg-factorial-green-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Característica:</p>
-                        <p class="text-xs text-gray-600">
-                            Podem ser "fine-tuned" (ajustados) com dados específicos da indústria para criar soluções especializadas.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Prompting -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Prompting / Prompt Engineering</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Processo de fornecer instruções e exemplos a um sistema de IA para guiá-lo a um resultado desejado.
-                    </p>
-                    <div class="bg-factorial-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Componentes:</p>
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li>• <strong>Tarefa:</strong> O que fazer</li>
-                            <li>• <strong>Contexto:</strong> Informações relevantes</li>
-                            <li>• <strong>Restrições:</strong> Limites e regras</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Hallucinations -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Hallucinations (Alucinações)</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Saídas de sistemas de IA que parecem reais, mas são incorretas ou irreais.
-                    </p>
-                    <div class="bg-factorial-yellow-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Por que acontece:</p>
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li>• Dados incompletos</li>
-                            <li>• Treinamento insuficiente</li>
-                            <li>• IA "preenche lacunas"</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Tokens -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Tokens & Parameters</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Unidades de medida para o tamanho e capacidade de modelos de IA.
-                    </p>
-                    <div class="bg-factorial-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Regra prática:</p>
-                        <p class="text-xs text-gray-600 mb-2">
-                            1 token ≈ 0.75 palavras (75%)
-                        </p>
-                        <p class="text-xs text-gray-600">
-                            Modelos maiores (mais parâmetros) geralmente são melhores, mas requerem mais recursos.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Alignment -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Alignment & Guardrails</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        <strong>Alignment:</strong> Garantir que objetivos da IA correspondam a valores humanos.
-                    </p>
-                    <p class="text-sm text-gray-600 mb-3">
-                        <strong>Guardrails:</strong> Diretrizes e restrições para prevenir comportamentos inadequados.
-                    </p>
-                    <div class="bg-factorial-green-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Exemplo:</p>
-                        <p class="text-xs text-gray-600">
-                            Sistema de recrutamento com guardrails para não discriminar grupos específicos.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Big Data -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Big Data (4 V's)</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Datasets extremamente grandes caracterizados por:
-                    </p>
-                    <div class="bg-factorial-green-50 rounded-lg p-3">
-                        <ul class="text-xs text-gray-600 space-y-1">
-                            <li>• <strong>Volume:</strong> Quantidade massiva</li>
-                            <li>• <strong>Velocidade:</strong> Gerados rapidamente</li>
-                            <li>• <strong>Variedade:</strong> Diferentes tipos</li>
-                            <li>• <strong>Veracidade:</strong> Qualidade e precisão</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Explainable AI -->
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-bold text-gray-900 mb-3">Explainable AI (IA Explicável)</h4>
-                    <p class="text-sm text-gray-600 mb-3">
-                        Campo de pesquisa que busca tornar os processos de IA mais transparentes e compreensíveis.
-                    </p>
-                    <div class="bg-factorial-50 rounded-lg p-3">
-                        <p class="text-xs font-semibold text-gray-900 mb-1">Objetivo:</p>
-                        <p class="text-xs text-gray-600">
-                            Transformar "caixas pretas" em "caixas de vidro" — entender como a IA chegou a uma decisão.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-12 bg-gradient-to-r from-factorial-500 via-factorial-green-500 to-factorial-yellow-500 rounded-2xl p-8 text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <p class="text-lg font-semibold mb-2 animate-fade-in">
-                    "Entender a terminologia é o primeiro passo para usar IA com confiança e responsabilidade."
-                </p>
-                <p class="text-sm text-white/80">
-                    Fonte: World Travel & Tourism Council - Introduction to AI 2024
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- Playbooks -->
     <section class="container mx-auto px-8 py-24">
         <div class="mb-16 grid place-items-center text-center">
@@ -1834,30 +1057,12 @@
     <section id="materiais" class="px-8 py-24 bg-gray-50 border-t border-gray-100">
         <div class="container mx-auto">
             <div class="mb-12 grid place-items-center text-center">
-                <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">Materiais e Agenda</h2>
+                <h2 class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">Materiais de Referência</h2>
                 <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit !text-gray-500 lg:w-6/12">
                     Tudo que você precisa para aplicar nas próximas 72 horas
                 </p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                    <h4 class="text-lg font-semibold text-blue-gray-900 mb-4">Agenda (120 min)</h4>
-                    <ul class="text-sm text-gray-600 space-y-2">
-                        <li>• 5' — Introdução e Contexto</li>
-                        <li>• 15' — História da IA (1950-2023)</li>
-                        <li>• 10' — Bloco 1: Sistema Nervoso</li>
-                        <li>• 25' — Bloco 2: Mente Híbrida + 3 Pilares</li>
-                        <li>• 20' — Bloco 3: IA na Factorial</li>
-                        <li>• 20' — Bloco 4: Prática R–C–O</li>
-                        <li>• 10' — Bloco 4.5: IA Generativa</li>
-                        <li>• 20' — Bloco 5: Ética e Segurança</li>
-                        <li>• 10' — Bloco 6: Desafio 72h</li>
-                        <li>• 5' — Terminologia (referência rápida)</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 mt-3 italic">
-                        * Tempo total pode ser ajustado conforme necessidade
-                    </p>
-                </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
                     <h4 class="text-lg font-semibold text-blue-gray-900 mb-4">Downloads</h4>
                     <ul class="text-sm text-gray-600 space-y-3">
@@ -1905,89 +1110,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tarefa Pós-Aula -->
-    <section class="px-8 py-24 bg-gradient-to-br from-factorial-midnight-500 to-factorial-midnight-700 text-white">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold text-center mb-8">Tarefa Pós-Aula: Desafio 72 Horas</h2>
-            
-            <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20">
-                <h3 class="text-xl font-bold mb-4">📋 Instruções de Entrega</h3>
-                <div class="space-y-4 text-white/90">
-                    <div>
-                        <p class="font-semibold mb-2">O que fazer:</p>
-                        <ol class="list-decimal ml-6 space-y-1 text-sm">
-                            <li>Substitua uma tarefa manual da sua rotina por uma versão feita com IA (usando método R–C–O).</li>
-                            <li>Documente o processo: antes/depois, tempo economizado, qualidade do resultado.</li>
-                            <li>Compartilhe com seu time: não apenas o resultado, mas a lição aprendida.</li>
-                        </ol>
-                    </div>
-                    
-                    <div>
-                        <p class="font-semibold mb-2">Formato de entrega:</p>
-                        <ul class="list-disc ml-6 space-y-1 text-sm">
-                            <li>Documento de 1 página (PDF ou Google Docs) com:</li>
-                            <li class="ml-4">- Descrição da tarefa substituída</li>
-                            <li class="ml-4">- Prompt R–C–O usado</li>
-                            <li class="ml-4">- Comparação antes/depois (tempo e qualidade)</li>
-                            <li class="ml-4">- Lição aprendida (o que funcionou, o que não funcionou)</li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <p class="font-semibold mb-2">Prazo:</p>
-                        <p class="text-sm">72 horas após o término da masterclass</p>
-                    </div>
-                    
-                    <div>
-                        <p class="font-semibold mb-2">Onde entregar:</p>
-                        <p class="text-sm">Canal #ai-academy no Slack da Factorial</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white/10 rounded-2xl p-8 mt-6 backdrop-blur-sm border border-white/20">
-                <h3 class="text-xl font-bold mb-4">✅ Critérios de Avaliação</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <p class="font-semibold mb-2 text-factorial-yellow-300">Aplicação do Método R–C–O (30 pontos)</p>
-                        <ul class="text-sm text-white/80 space-y-1 ml-4">
-                            <li>• Role claramente definido (10 pts)</li>
-                            <li>• Context completo e relevante (10 pts)</li>
-                            <li>• Output específico e mensurável (10 pts)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="font-semibold mb-2 text-factorial-green-300">Documentação e Evidência (30 pontos)</p>
-                        <ul class="text-sm text-white/80 space-y-1 ml-4">
-                            <li>• Comparação antes/depois clara (15 pts)</li>
-                            <li>• Métricas de tempo e qualidade (15 pts)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="font-semibold mb-2 text-factorial-orange-300">Reflexão e Aprendizado (25 pontos)</p>
-                        <ul class="text-sm text-white/80 space-y-1 ml-4">
-                            <li>• Lição aprendida identificada (15 pts)</li>
-                            <li>• Aplicação futura proposta (10 pts)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="font-semibold mb-2 text-factorial-300">Compartilhamento (15 pontos)</p>
-                        <ul class="text-sm text-white/80 space-y-1 ml-4">
-                            <li>• Compartilhado com time (10 pts)</li>
-                            <li>• Feedback recebido e incorporado (5 pts)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-6 p-4 bg-white/5 rounded-lg border border-white/10">
-                    <p class="text-sm text-white/90">
-                        <strong>Nota mínima para aprovação:</strong> 70 pontos (70%)<br>
-                        <strong>Nota máxima:</strong> 100 pontos
-                    </p>
                 </div>
             </div>
         </div>
@@ -2089,5 +1211,7 @@
             });
         });
     </script>
+</body>
+</html>
 </body>
 </html>
