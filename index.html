@@ -14,28 +14,69 @@
                     },
                     colors: {
                         'factorial': {
-                            50: '#f0f4ff',
-                            100: '#e0e9ff',
-                            200: '#c7d7ff',
-                            300: '#a4baff',
-                            400: '#8192ff',
-                            500: '#6366f1', // Primary blue
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            800: '#3730a3',
-                            900: '#312e81',
+                            // Radical Red #FF355E
+                            50: '#fff1f3',
+                            100: '#ffe0e5',
+                            200: '#ffc7d1',
+                            300: '#ff9fb0',
+                            400: '#ff6b85',
+                            500: '#FF355E', // Radical Red - Primary
+                            600: '#e62e52',
+                            700: '#cc2646',
+                            800: '#b31f3a',
+                            900: '#99182e',
                         },
-                        'factorial-purple': {
-                            50: '#faf5ff',
-                            100: '#f3e8ff',
-                            200: '#e9d5ff',
-                            300: '#d8b4fe',
-                            400: '#c084fc',
-                            500: '#a855f7', // Primary purple
-                            600: '#9333ea',
-                            700: '#7e22ce',
-                            800: '#6b21a8',
-                            900: '#581c87',
+                        'factorial-green': {
+                            // Viridian Green #07A2AD
+                            50: '#e6f7f8',
+                            100: '#b3e8eb',
+                            200: '#80d9de',
+                            300: '#4dcad1',
+                            400: '#1abac4',
+                            500: '#07A2AD', // Viridian Green - Primary
+                            600: '#06919a',
+                            700: '#058087',
+                            800: '#046f74',
+                            900: '#035e61',
+                        },
+                        'factorial-yellow': {
+                            // Sunbeam #FFB940
+                            50: '#fff8ed',
+                            100: '#ffeed3',
+                            200: '#ffddb9',
+                            300: '#ffcc9f',
+                            400: '#ffbb85',
+                            500: '#FFB940', // Sunbeam - Primary
+                            600: '#e6a639',
+                            700: '#cc9332',
+                            800: '#b3802b',
+                            900: '#996d24',
+                        },
+                        'factorial-orange': {
+                            // Tangerine #FF9153
+                            50: '#fff4f0',
+                            100: '#ffe0d1',
+                            200: '#ffccb2',
+                            300: '#ffb893',
+                            400: '#ffa474',
+                            500: '#FF9153', // Tangerine - Primary
+                            600: '#e6824a',
+                            700: '#cc7341',
+                            800: '#b36438',
+                            900: '#99552f',
+                        },
+                        'factorial-midnight': {
+                            // Midnight #25253D
+                            50: '#e8e8eb',
+                            100: '#c1c1c7',
+                            200: '#9a9aa3',
+                            300: '#73737f',
+                            400: '#4c4c5b',
+                            500: '#25253D', // Midnight - Primary
+                            600: '#1e1e30',
+                            700: '#171723',
+                            800: '#101016',
+                            900: '#090909',
                         },
                         'blue-gray': {
                             50: '#eceff1',
@@ -128,7 +169,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #FF355E 0%, #07A2AD 50%, #FFB940 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -198,7 +239,7 @@
                         Há 20 anos, empresas competiam por capital e eficiência. Hoje, elas competem por <strong>inteligência</strong> — a capacidade de perceber, aprender e decidir antes dos outros. A IA conecta dados, pessoas e decisões. Ela não é mais um software — é o sistema nervoso que sincroniza o corpo inteiro da empresa.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#blocos" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-4 px-8 rounded-lg bg-gradient-to-r from-factorial-500 to-factorial-purple-500 text-white shadow-lg shadow-factorial-500/30 hover:shadow-xl hover:shadow-factorial-500/40 hover:scale-105 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none transform transition-transform duration-300">
+                        <a href="#blocos" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-4 px-8 rounded-lg bg-gradient-to-r from-factorial-500 to-factorial-green-500 text-white shadow-lg shadow-factorial-500/30 hover:shadow-xl hover:shadow-factorial-500/40 hover:scale-105 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none transform transition-transform duration-300">
                             Iniciar a Jornada
                         </a>
                     </div>
@@ -285,7 +326,7 @@
                         </div>
                         <div class="lg:text-left">
                             <div class="inline-block bg-white rounded-xl p-6 shadow-md border-2 border-yellow-200 max-w-md">
-                                <div class="text-2xl font-bold text-factorial-purple-600 mb-2">2022</div>
+                                <div class="text-2xl font-bold text-factorial-green-600 mb-2">2022</div>
                                 <h4 class="text-xl font-bold text-gray-900 mb-2">ChatGPT: O Momento</h4>
                                 <p class="text-gray-600 text-sm">
                                     O ChatGPT da OpenAI alcançou 100 milhões de usuários em apenas 2 meses — o produto de consumo que mais cresceu na história. Isso levou a IA para o mainstream em 2023.
@@ -296,7 +337,7 @@
                 </div>
             </div>
 
-            <div class="mt-12 bg-gradient-to-r from-factorial-500 to-factorial-purple-500 rounded-2xl p-8 text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="mt-12 bg-gradient-to-r from-factorial-500 via-factorial-green-500 to-factorial-yellow-500 rounded-2xl p-8 text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <p class="text-xl font-semibold mb-2 animate-fade-in">
                     "Apenas um prenúncio do que está por vir, apenas a sombra do que será"
                 </p>
@@ -318,20 +359,20 @@
                         <div class="animated-bar bg-factorial-500 h-2 rounded-full" style="--target-width: 30%; --delay: 0.2s"></div>
                     </div>
                 </div>
-                <div class="text-center p-6 bg-factorial-purple-50 rounded-xl card-hover border-2 border-factorial-purple-200">
-                    <div class="text-4xl font-bold text-factorial-purple-600 mb-2 animate-bounce-slow" style="animation-delay: 0.1s">2010s</div>
+                <div class="text-center p-6 bg-factorial-green-50 rounded-xl card-hover border-2 border-factorial-green-200">
+                    <div class="text-4xl font-bold text-factorial-green-600 mb-2 animate-bounce-slow" style="animation-delay: 0.1s">2010s</div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Sistemas de Automação</h3>
                     <p class="text-gray-600 text-sm">Fluxos, dashboards — fazer mais rápido</p>
-                    <div class="mt-4 w-full bg-factorial-purple-100 rounded-full h-2">
-                        <div class="animated-bar bg-factorial-purple-500 h-2 rounded-full" style="--target-width: 60%; --delay: 0.4s"></div>
+                    <div class="mt-4 w-full bg-factorial-green-100 rounded-full h-2">
+                        <div class="animated-bar bg-factorial-green-500 h-2 rounded-full" style="--target-width: 60%; --delay: 0.4s"></div>
                     </div>
                 </div>
-                <div class="text-center p-6 bg-factorial-purple-50 rounded-xl card-hover border-2 border-factorial-purple-200">
-                    <div class="text-4xl font-bold text-factorial-purple-600 mb-2 animate-bounce-slow" style="animation-delay: 0.2s">2020s</div>
+                <div class="text-center p-6 bg-factorial-yellow-50 rounded-xl card-hover border-2 border-factorial-yellow-200">
+                    <div class="text-4xl font-bold text-factorial-yellow-600 mb-2 animate-bounce-slow" style="animation-delay: 0.2s">2020s</div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Sistemas de Inteligência</h3>
                     <p class="text-gray-600 text-sm">IA integrativa — pensar melhor</p>
-                    <div class="mt-4 w-full bg-factorial-purple-100 rounded-full h-2">
-                        <div class="animated-bar bg-factorial-purple-500 h-2 rounded-full" style="--target-width: 100%; --delay: 0.6s"></div>
+                    <div class="mt-4 w-full bg-factorial-yellow-100 rounded-full h-2">
+                        <div class="animated-bar bg-factorial-yellow-500 h-2 rounded-full" style="--target-width: 100%; --delay: 0.6s"></div>
                     </div>
                 </div>
             </div>
@@ -372,7 +413,7 @@
                         <p class="text-gray-600">"Quantas decisões do seu time são tomadas hoje baseadas em intuição — e quantas são baseadas em evidência?"</p>
                     </div>
                 </div>
-                <div class="bg-gradient-to-br from-factorial-500 to-factorial-purple-500 rounded-2xl p-8 text-white shadow-2xl hover:shadow-factorial-500/50 transition-shadow duration-300">
+                <div class="bg-gradient-to-br from-factorial-500 to-factorial-green-500 rounded-2xl p-8 text-white shadow-2xl hover:shadow-factorial-500/50 transition-shadow duration-300">
                     <h4 class="text-xl font-bold mb-4">Intenção Cognitiva</h4>
                     <p class="text-white/90 mb-4">
                         Fazer o colaborador enxergar IA como <strong>infraestrutura viva</strong>, não como ferramenta isolada.
@@ -387,7 +428,7 @@
             <div class="space-y-12">
                 <div class="text-center mb-8">
                     <div class="flex items-center justify-center gap-4 mb-4">
-                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-purple-100 text-factorial-purple-600 font-bold text-2xl animate-pulse-slow">2</span>
+                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-green-100 text-factorial-green-600 font-bold text-2xl animate-pulse-slow">2</span>
                         <div>
                             <h3 class="text-3xl font-bold text-gray-900">A Mente Híbrida e os 3 Pilares da IA</h3>
                             <p class="text-sm text-gray-500 mt-1">25 minutos</p>
@@ -462,7 +503,7 @@
                                 <p class="text-xs text-gray-600">Supercomputador da Microsoft com milhões de dólares</p>
                             </div>
                             <div class="bg-white rounded-lg p-3">
-                                <p class="text-xs font-bold text-factorial-purple-600 mb-1">TPU do Google</p>
+                                <p class="text-xs font-bold text-factorial-green-600 mb-1">TPU do Google</p>
                                 <p class="text-xs text-gray-600">400 trilhões de cálculos por segundo</p>
                             </div>
                             <div class="bg-white rounded-lg p-3">
@@ -535,7 +576,7 @@
                             </p>
                         </div>
                         <div class="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                            <h5 class="font-bold mb-2 text-factorial-purple-300">3. Aprendizado por Reforço</h5>
+                            <h5 class="font-bold mb-2 text-factorial-green-300">3. Aprendizado por Reforço</h5>
                             <p class="text-sm text-gray-300">
                                 Aprende por tentativa e erro, sendo recompensado ou punido matematicamente. Exemplo: IA que joga xadrez melhorando a cada partida.
                             </p>
@@ -544,7 +585,7 @@
                 </div>
 
                 <!-- Big Data -->
-                <div class="bg-gradient-to-br from-factorial-800 via-factorial-purple-800 to-factorial-900 rounded-2xl p-8 text-white mt-8 shadow-2xl">
+                <div class="bg-gradient-to-br from-factorial-midnight-500 via-factorial-midnight-600 to-factorial-midnight-700 rounded-2xl p-8 text-white mt-8 shadow-2xl">
                     <h4 class="text-2xl font-bold mb-6 text-center animate-fade-in">A Explosão de Dados: O Combustível da IA</h4>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                         <div class="stat-card bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20">
@@ -561,19 +602,19 @@
                         </div>
                         <div class="stat-card bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20">
                             <div class="flex items-center justify-between mb-4">
-                                <div class="text-4xl font-bold text-factorial-purple-300 animated-number" data-target="175">0</div>
+                                <div class="text-4xl font-bold text-factorial-green-300 animated-number" data-target="175">0</div>
                                 <span class="text-lg">ZB</span>
                             </div>
                             <p class="text-sm text-gray-200 mb-3">
                                 Zettabytes de dados serão gerados em 2025
                             </p>
                             <div class="w-full bg-white/20 rounded-full h-3 overflow-hidden">
-                                <div class="animated-bar bg-gradient-to-r from-factorial-purple-400 to-factorial-purple-500 h-full rounded-full shimmer" style="--target-width: 85%; --delay: 0.5s"></div>
+                                <div class="animated-bar bg-gradient-to-r from-factorial-green-400 to-factorial-green-500 h-full rounded-full shimmer" style="--target-width: 85%; --delay: 0.5s"></div>
                             </div>
                         </div>
                         <div class="stat-card bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20">
                             <div class="flex items-center justify-between mb-4">
-                                <div class="text-4xl font-bold text-factorial-purple-300 animated-number" data-target="29.3">0</div>
+                                <div class="text-4xl font-bold text-factorial-yellow-300 animated-number" data-target="29.3">0</div>
                                 <span class="text-lg">B</span>
                             </div>
                             <p class="text-sm text-gray-200 mb-3">
@@ -596,7 +637,7 @@
                                 <p class="text-xs text-gray-300">Gerados em tempo real</p>
                             </div>
                             <div>
-                                <p class="text-xs font-semibold text-factorial-purple-300 mb-1">VARIEDADE</p>
+                                <p class="text-xs font-semibold text-factorial-green-300 mb-1">VARIEDADE</p>
                                 <p class="text-xs text-gray-300">Textos, imagens, vídeos, áudio</p>
                             </div>
                             <div>
@@ -714,7 +755,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
                 <div class="order-2 lg:order-1">
                     <div class="flex items-center gap-4 mb-6">
-                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-purple-100 text-factorial-purple-600 font-bold text-2xl animate-pulse-slow">4</span>
+                        <span class="flex items-center justify-center w-16 h-16 rounded-full bg-factorial-yellow-100 text-factorial-yellow-600 font-bold text-2xl animate-pulse-slow">4</span>
                         <div>
                             <h3 class="text-3xl font-bold text-gray-900">A Prática do Pensamento com IA</h3>
                             <p class="text-sm text-gray-500 mt-1">20 minutos</p>
@@ -723,8 +764,8 @@
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
                         Ensinar o uso estruturado da IA com o método <strong>R–C–O</strong> (Role, Context, Output). Transformar pedidos vagos em instruções cirúrgicas.
                     </p>
-                    <div class="bg-factorial-purple-50 border-l-4 border-factorial-purple-400 p-4 rounded-r-lg mb-6">
-                        <p class="text-factorial-purple-900 font-medium">
+                    <div class="bg-factorial-yellow-50 border-l-4 border-factorial-yellow-400 p-4 rounded-r-lg mb-6">
+                        <p class="text-factorial-yellow-900 font-medium">
                             "Lixo entra, lixo sai. Clareza entra, estratégia sai."
                         </p>
                     </div>
@@ -739,8 +780,8 @@
                         <div class="flex justify-center text-gray-400">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                         </div>
-                        <div class="p-4 bg-factorial-purple-50 rounded-lg border border-factorial-purple-200">
-                            <span class="text-xs font-bold text-factorial-purple-600 uppercase tracking-wider">✅ R–C–O</span>
+                        <div class="p-4 bg-factorial-green-50 rounded-lg border border-factorial-green-200">
+                            <span class="text-xs font-bold text-factorial-green-600 uppercase tracking-wider">✅ R–C–O</span>
                             <div class="font-mono text-sm text-gray-800 mt-2 space-y-1">
                                 <div><strong>Role:</strong> Gerente de Parcerias Sênior</div>
                                 <div><strong>Context:</strong> Parceiro 90 dias sem leads, tom consultivo</div>
@@ -752,9 +793,9 @@
             </div>
 
             <!-- BLOCO 4.5: IA Generativa -->
-            <div class="bg-gradient-to-br from-factorial-50 via-factorial-purple-50 to-pink-50 rounded-3xl p-12 border-2 border-factorial-purple-200 shadow-xl">
+            <div class="bg-gradient-to-br from-factorial-50 via-factorial-green-50 to-factorial-yellow-50 rounded-3xl p-12 border-2 border-factorial-green-200 shadow-xl">
                 <div class="text-center mb-8">
-                    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-factorial-purple-100 text-factorial-purple-600 font-bold text-2xl mb-4 animate-pulse-slow">4.5</span>
+                    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-factorial-green-100 text-factorial-green-600 font-bold text-2xl mb-4 animate-pulse-slow">4.5</span>
                     <h3 class="text-3xl font-bold text-gray-900 mb-4">IA Generativa: A Revolução de 2023</h3>
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                         Entender o que é IA Generativa, como funciona e por que ela mudou tudo em 2023.
@@ -772,11 +813,11 @@
                                 <p class="text-sm font-semibold text-gray-900 mb-1">Origem: 2017</p>
                                 <p class="text-xs text-gray-600">Paper do Google: "Attention Is All You Need" introduziu os Transformers</p>
                             </div>
-                            <div class="bg-factorial-purple-50 rounded-lg p-3 border-l-4 border-factorial-purple-500 card-hover">
+                            <div class="bg-factorial-green-50 rounded-lg p-3 border-l-4 border-factorial-green-500 card-hover">
                                 <p class="text-sm font-semibold text-gray-900 mb-1">ChatGPT: Nov 2022</p>
                                 <p class="text-xs text-gray-600">100 milhões de usuários em 2 meses — produto que mais cresceu na história</p>
-                                <div class="mt-2 w-full bg-factorial-purple-100 rounded-full h-2">
-                                    <div class="animated-bar bg-factorial-purple-500 h-2 rounded-full" style="--target-width: 100%; --delay: 0.5s"></div>
+                                <div class="mt-2 w-full bg-factorial-green-100 rounded-full h-2">
+                                    <div class="animated-bar bg-factorial-green-500 h-2 rounded-full" style="--target-width: 100%; --delay: 0.5s"></div>
                                 </div>
                             </div>
                             <div class="bg-factorial-50 rounded-lg p-3 border-l-4 border-factorial-500 card-hover">
@@ -810,7 +851,7 @@
                             <span class="text-2xl block mb-2 animate-bounce-slow">💬</span>
                             <p class="text-xs font-semibold text-gray-900">Tradução</p>
                         </div>
-                        <div class="text-center p-3 bg-factorial-purple-50 rounded-lg card-hover">
+                        <div class="text-center p-3 bg-factorial-green-50 rounded-lg card-hover">
                             <span class="text-2xl block mb-2 animate-bounce-slow" style="animation-delay: 0.1s">📝</span>
                             <p class="text-xs font-semibold text-gray-900">Escrita</p>
                         </div>
@@ -818,7 +859,7 @@
                             <span class="text-2xl block mb-2 animate-bounce-slow" style="animation-delay: 0.2s">📊</span>
                             <p class="text-xs font-semibold text-gray-900">Tabelas</p>
                         </div>
-                        <div class="text-center p-3 bg-factorial-purple-50 rounded-lg card-hover">
+                        <div class="text-center p-3 bg-factorial-yellow-50 rounded-lg card-hover">
                             <span class="text-2xl block mb-2 animate-bounce-slow" style="animation-delay: 0.3s">🧠</span>
                             <p class="text-xs font-semibold text-gray-900">Contexto</p>
                         </div>
@@ -856,7 +897,7 @@
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <span class="text-factorial-purple-500 font-bold text-lg">2.</span>
+                                    <span class="text-factorial-green-500 font-bold text-lg">2.</span>
                                     <div>
                                         <strong>Privacidade Inegociável</strong> — dados internos não saem do ecossistema. Nunca use ferramentas públicas com dados sensíveis.
                                     </div>
@@ -1024,7 +1065,7 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-factorial-purple-600 animated-number mb-2" data-target="20">0</div>
+                                <div class="text-3xl font-bold text-factorial-green-600 animated-number mb-2" data-target="20">0</div>
                                 <span class="text-lg">%</span>
                                 <p class="text-xs text-gray-600 mt-1">Mais cânceres detectados cedo</p>
                                 <div class="mt-2 w-full bg-factorial-100 rounded-full h-2">
@@ -1034,7 +1075,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gradient-to-br from-factorial-purple-50 to-factorial-purple-100 rounded-xl p-6 border-2 border-factorial-purple-200 card-hover">
+                <div class="bg-gradient-to-br from-factorial-green-50 to-factorial-green-100 rounded-xl p-6 border-2 border-factorial-green-200 card-hover">
                     <div class="flex items-center gap-3 mb-4">
                         <span class="text-3xl">🧬</span>
                         <h4 class="text-xl font-bold text-gray-900">AlphaFold: Estrutura de Proteínas</h4>
@@ -1090,12 +1131,12 @@
                     <span class="inline-block px-3 py-1 rounded-lg bg-purple-100 text-purple-700 text-xs font-bold">+19% conversão</span>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                    <div class="w-12 h-12 bg-factorial-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-factorial-orange-100 rounded-lg flex items-center justify-center mb-4">
                         <span class="text-2xl">💰</span>
                     </div>
                     <h4 class="text-lg font-semibold text-gray-900 mb-2">Financeiro: Relatórios</h4>
                     <p class="text-sm text-gray-600 mb-4">Geração de variações semanais com insights e anomalias destacadas.</p>
-                    <span class="inline-block px-3 py-1 rounded-lg bg-factorial-purple-100 text-factorial-purple-700 text-xs font-bold">-40% esforço</span>
+                    <span class="inline-block px-3 py-1 rounded-lg bg-factorial-orange-100 text-factorial-orange-700 text-xs font-bold">-40% esforço</span>
                 </div>
             </div>
         </div>
@@ -1272,7 +1313,7 @@
                 </div>
             </div>
 
-            <div class="mt-12 bg-gradient-to-r from-factorial-500 to-factorial-purple-500 rounded-2xl p-8 text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div class="mt-12 bg-gradient-to-r from-factorial-500 via-factorial-green-500 to-factorial-yellow-500 rounded-2xl p-8 text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <p class="text-lg font-semibold mb-2 animate-fade-in">
                     "Entender a terminologia é o primeiro passo para usar IA com confiança e responsabilidade."
                 </p>
@@ -1379,7 +1420,7 @@
     <!-- Conclusão -->
     <section class="py-20 bg-white border-t border-gray-100">
         <div class="container mx-auto px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12 bg-gradient-to-br from-factorial-900 via-factorial-purple-900 to-gray-900 rounded-3xl p-12 text-white shadow-2xl">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 bg-gradient-to-br from-factorial-midnight-500 via-factorial-midnight-600 to-factorial-midnight-700 rounded-3xl p-12 text-white shadow-2xl">
                 <div class="md:w-1/2">
                     <h2 class="text-3xl font-bold text-white mb-6">
                         Você é parte da mente da Factorial.
